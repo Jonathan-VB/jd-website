@@ -1,0 +1,389 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Lora Italic";
+  src: url("../fonts/Lora-Italic-webfont.eot");
+  src: url("../fonts/Lora-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lora-Italic-webfont.woff") format("woff"), url("../fonts/Lora-Italic-webfont.ttf") format("truetype"), url("../fonts/Lora-Italic-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto Black";
+  src: url("../fonts/Roboto-Black-webfont.eot");
+  src: url("../fonts/Roboto-Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black-webfont.woff") format("woff"), url("../fonts/Roboto-Black-webfont.ttf") format("truetype"), url("../fonts/Roboto-Black-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../fonts/Roboto-Medium-webfont.eot");
+  src: url("../fonts/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium-webfont.woff") format("woff"), url("../fonts/Roboto-Medium-webfont.ttf") format("truetype"), url("../fonts/Roboto-Medium-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg") format("svg");
+}
+
+h1,
+ul {
+  color: #fff;
+  font-family: "Roboto Black", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: #fff;
+  font-family: "Lora Italic", "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+p {
+  color: #fff;
+  font-family: "Roboto light", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes logoGlow {
+  from {
+    border-radius: 50%;
+    box-shadow: 0 0 19px 10px transparent, inset 0 0 19px 10px transparent;
+  }
+  50% {
+    border-radius: 50%;
+    box-shadow: 0 0 18px 10px #009ea8, inset 0 0 18px 10px #009ea8;
+  }
+  to {
+    border-radius: 50%;
+    box-shadow: 0 0 19px 10px transparent, inset 0 0 19px 10px transparent;
+  }
+}
+
+@keyframes logoGlow {
+  from {
+    border-radius: 50%;
+    box-shadow: 0 0 19px 10px transparent, inset 0 0 19px 10px transparent;
+  }
+  50% {
+    border-radius: 50%;
+    box-shadow: 0 0 18px 10px #009ea8, inset 0 0 18px 10px #009ea8;
+  }
+  to {
+    border-radius: 50%;
+    box-shadow: 0 0 19px 10px transparent, inset 0 0 19px 10px transparent;
+  }
+}
+
+@-webkit-keyframes logoPulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes logoPulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.button {
+  background: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto Black", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 10px;
+  text-transform: uppercase;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.button:hover {
+  border: 3px solid #009ea8;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  overflow: visible;
+}
+
+.navbar {
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.navbar ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  text-shadow: 1px 1px 1px #111;
+}
+
+.navbar li:first-child::after, .navbar li:last-child::after {
+  background: transparent;
+  content: '';
+  display: block;
+  height: 2px;
+  margin: auto;
+  margin-top: 3px;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease;
+  width: 0;
+}
+
+.navbar li:nth-child(2) {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: logoPulse;
+          animation-name: logoPulse;
+}
+
+.navbar li:nth-child(2)::before {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: logoGlow;
+          animation-name: logoGlow;
+  content: '';
+  display: block;
+  height: 100%;
+  opacity: .5;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: translate(-7%, -10%);
+          transform: translate(-7%, -10%);
+  width: 100%;
+}
+
+.navbar li:hover::after {
+  background: #009ea8;
+  width: 100%;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar--fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+}
+
+.landing-background {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.landing-content {
+  left: 50%;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.landing-content h1 {
+  font-size: 8vw;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px #111;
+}
+
+.landing-content h2 {
+  font-size: 3.5vw;
+  text-shadow: 1px 1px 2px #111;
+}
+
+.portfolio-background {
+  height: 100vh;
+}
+
+.portfolio-content {
+  height: calc(100vh - 100px);
+  left: 0;
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+}
+
+.portfolio-content--fixed-top {
+  position: fixed;
+  top: 100px;
+}
+
+.portfolio-content--left {
+  float: left;
+  height: 100%;
+  margin-left: 5%;
+  width: 45%;
+}
+
+.portfolio-content--left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.portfolio-content--left li h1 {
+  -webkit-transition: .750s;
+  transition: .750s;
+}
+
+.project-title__active {
+  font-size: 1.5em;
+}
+
+.project--1__subtitle,
+.project--2__subtitle,
+.project--3__subtitle,
+.project--4__subtitle,
+.project--5__subtitle {
+  margin-left: -200px;
+  opacity: 0;
+  -webkit-transition: .750s;
+  transition: .750s;
+}
+
+.project--1__description,
+.project--2__description,
+.project--3__description,
+.project--4__description,
+.project--5__description {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: opacity .75s ease-out;
+  transition: opacity .75s ease-out;
+}
+
+.portfolio-content--right {
+  float: right;
+  height: 100%;
+  margin-right: 5%;
+  width: 45%;
+}
+
+.project-description {
+  left: 50%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.project-description p {
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
