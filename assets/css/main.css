@@ -82,7 +82,8 @@ ul {
   font-family: "Roboto Black", Arial, Helvetica, sans-serif;
 }
 
-h2 {
+h2,
+h4 {
   color: #fff;
   font-family: "Lora Italic", "Times New Roman", Times, serif;
   font-style: italic;
@@ -174,9 +175,9 @@ a {
 
 .button:hover {
   border: 3px solid #009ea8;
+  overflow: visible;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  overflow: visible;
 }
 
 .navbar {
@@ -334,7 +335,7 @@ a {
   text-transform: uppercase;
 }
 
-.portfolio-content--left li h1 {
+.portfolio-content--left li h3 {
   -webkit-transition: .750s;
   transition: .750s;
 }

@@ -12,7 +12,7 @@
   &:hover {
     // Change this to a particular projects theme colour later.
     border: 3px solid $color-primary;
+    overflow: visible; // transition: .5s;
     transform: scale(1.05);
-overflow: visible;   // transition: .5s;
   }
 }
