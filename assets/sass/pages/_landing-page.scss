@@ -1,3 +1,7 @@
+.index {
+  overflow: hidden;
+}
+
 .landing-background {
   background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
   background-size: cover;
