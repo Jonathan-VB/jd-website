@@ -313,6 +313,10 @@ a {
   width: 100%;
 }
 
+.portfolio-content a {
+  color: #fff;
+}
+
 .portfolio-content--fixed-top {
   position: fixed;
   top: 100px;
