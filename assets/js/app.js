@@ -14,6 +14,7 @@ $window.scroll(function() {
   }
 }); // end sticky navbar
 
+// Main page scrolling functionality
 $(document).ready(function () {
   var divs = $('.scroll-point');
   var dir = 'up'; // wheel scroll direction

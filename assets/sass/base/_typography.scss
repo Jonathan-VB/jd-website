@@ -3,6 +3,10 @@
 @include font-face('Roboto Medium', Roboto-Medium);
 @include font-face('Roboto Light', Roboto-Light);
 
+body {
+  overflow: hidden;
+}
+
 h1,
 ul {
   color: $white;

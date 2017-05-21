@@ -76,6 +76,10 @@ table {
   src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg") format("svg");
 }
 
+body {
+  overflow: hidden;
+}
+
 h1,
 ul {
   color: #fff;
@@ -333,6 +337,10 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-transform: uppercase;
+}
+
+.portfolio-content--left li {
+  cursor: pointer;
 }
 
 .portfolio-content--left li h3 {
