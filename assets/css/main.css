@@ -403,10 +403,10 @@ a {
   -webkit-column-count: 5;
      -moz-column-count: 5;
           column-count: 5;
-  -webkit-column-gap: 0;
-     -moz-column-gap: 0;
-          column-gap: 0;
-  line-height: 0;
+  -webkit-column-gap: 5;
+     -moz-column-gap: 5;
+          column-gap: 5;
+  line-height: 2.5;
 }
 
 .portfolio-grid img {
