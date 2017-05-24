@@ -6,7 +6,12 @@
 
   img {
     height: auto;
+    transition: 1s;
     width: 100%;
+
+    &:hover {
+      transform: scale(1.05);
+    }
    }
 }
 

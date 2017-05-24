@@ -416,7 +416,14 @@ a {
 
 .portfolio-grid img {
   height: auto;
+  -webkit-transition: 1s;
+  transition: 1s;
   width: 100%;
+}
+
+.portfolio-grid img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 1200px) {
