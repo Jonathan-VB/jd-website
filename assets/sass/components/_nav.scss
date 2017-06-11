@@ -5,6 +5,7 @@
   left: 0;
   position: absolute;
   width: 100%;
+  z-index: z('navbar'); 
 
   &-portfolio-grid {
     position: fixed;

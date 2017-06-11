@@ -188,6 +188,7 @@ a {
   left: 0;
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar-portfolio-grid {
