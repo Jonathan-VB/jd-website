@@ -1,3 +1,26 @@
+// Web fonts mixin.
+@mixin font-face($family, $file) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path-font}/#{$file}-webfont.eot');
+    src: url('#{$path-font}/#{$file}-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$path-font}/#{$file}-webfont.woff') format('woff'),
+    url('#{$path-font}/#{$file}-webfont.ttf') format('truetype'),
+    url('#{$path-font}/#{$file}-webfont.svg') format('svg');
+  }
+}
+
+// Font fallbacks.
+$font-sans-serif-fallback: Arial, Helvetica, sans-serif;
+$font-serif-fallback: "Times New Roman", Times, serif;
+
+// Font families.
+$font-lora-italic: 'Lora Italic', $font-serif-fallback;
+$font-roboto-black: 'Roboto Black', $font-sans-serif-fallback;
+$font-roboto-medium: 'Roboto medium', $font-sans-serif-fallback;
+$font-roboto-light: 'Roboto light', $font-sans-serif-fallback;
+
+// Include fonts.
 @include font-face('Lora Italic', Lora-Italic);
 @include font-face('Roboto Black', Roboto-Black);
 @include font-face('Roboto Medium', Roboto-Medium);

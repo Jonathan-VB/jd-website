@@ -52,6 +52,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background: #111;
+}
+
 @font-face {
   font-family: "Lora Italic";
   src: url("../fonts/Lora-Italic-webfont.eot");
