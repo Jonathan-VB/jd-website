@@ -1,11 +1,11 @@
 .navbar {
-  background: linear-gradient(top, rgba($white, 0), rgba($black, .5), rgba($black, .5), rgba($white, 0));
+  background: linear-gradient(to top, rgba($white, 0), rgba($black, .5), rgba($black, .5), rgba($white, 0));
   bottom: 0;
   height: 100px;
   left: 0;
   position: absolute;
   width: 100%;
-  z-index: z('navbar'); 
+  z-index: z('navbar');
 
   &-portfolio-grid {
     position: fixed;
