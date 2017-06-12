@@ -275,6 +275,145 @@ a {
   top: 0;
 }
 
+form {
+  color: #009ea8;
+}
+
+.inputbox {
+  height: 30px;
+  width: 250px;
+  position: absolute;
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.inputbox input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 6.5px 0;
+  border: 0;
+  background: none;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 100%;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+  -webkit-transition-delay: 0s, 0.4s, 0s;
+          transition-delay: 0s, 0.4s, 0s;
+  box-shadow: 0 0 0 1px currentColor;
+  color: inherit;
+  cursor: pointer;
+  padding: 6.5px 0;
+  padding-right: 30px;
+  font-weight: lighter;
+  font-family: 'Roboto';
+}
+
+.inputbox input:focus, .inputbox input:valid {
+  width: 100%;
+  -webkit-transition-delay: 0.4s, 0s, 0.4s;
+          transition-delay: 0.4s, 0s, 0.4s;
+  outline: 0;
+  border-radius: 0;
+  cursor: text;
+  padding-left: 6.5px;
+}
+
+.inputbox input:focus + .del, .inputbox input:valid + .del {
+  pointer-events: all;
+  left: calc(100% - 15px);
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.inputbox input:focus + .del:focus, .inputbox input:valid + .del:focus {
+  box-shadow: 0 0 0 1px currentColor;
+  height: 22.5px;
+  width: 22.5px;
+}
+
+.inputbox input:focus + .del:before, .inputbox input:valid + .del:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg) scaleY(0.7);
+          transform: translate(-50%, -50%) rotate(-45deg) scaleY(0.7);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.inputbox input:focus + .del:after, .inputbox input:valid + .del:after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scaleY(0.7);
+          transform: translate(-50%, -50%) rotate(45deg) scaleY(0.7);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.inputbox .del {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  background: none;
+  border-radius: 100%;
+  border: 0;
+  pointer-events: none;
+  -webkit-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  color: inherit;
+  cursor: pointer;
+}
+
+.inputbox .del:focus {
+  outline: none;
+}
+
+.inputbox .del:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  width: 1px;
+  height: 22.5px;
+  -webkit-transform: translate(19.75px, 19.75px) translate(-50%, -50%) rotate(-45deg) scaleY(1);
+          transform: translate(19.75px, 19.75px) translate(-50%, -50%) rotate(-45deg) scaleY(1);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.inputbox .del:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  width: 1px;
+  height: 22.5px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+          transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
 .container {
   margin: 0 auto;
   width: 90%;
@@ -503,6 +642,14 @@ a {
        -moz-column-count: 1;
             column-count: 1;
   }
+}
+
+.portfolio-functions {
+  margin: 140px 0 20px;
+}
+
+.portfolio-functions__search {
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
