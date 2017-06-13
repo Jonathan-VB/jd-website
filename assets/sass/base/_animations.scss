@@ -1,4 +1,5 @@
-// Glowing logo animation.
+// 1.0 Logo animations
+// 1.1 Glowing logo animation.
 @keyframes logoGlow {
   from {
     border-radius: 50%;
@@ -16,7 +17,7 @@
   }
 }
 
-// Pulsing logo animation.
+// 1.2 Pulsing logo animation.
 @keyframes logoPulse {
   from {
     transform: scale(1);
