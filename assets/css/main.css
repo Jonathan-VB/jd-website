@@ -534,6 +534,10 @@ input[type="submit"]:hover {
   opacity: 1;
 }
 
+.portfolio-grid-item__overlay__title {
+  margin-bottom: 10%;
+}
+
 @media (max-width: 1200px) {
   .portfolio-grid {
     -webkit-column-count: 4;

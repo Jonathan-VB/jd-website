@@ -16,7 +16,7 @@ $(document).ready(function () {
     allImages += '<div class="portfolio-grid-item__container">';
     allImages += '<div class="portfolio-grid-item">';
     allImages += '<img src="https://placekitten.com/'+width+'/'+height+'" alt="pretty kitty">';
-    allImages += '<div class="portfolio-grid-item__overlay"><h2>Hello!!!</h2></div>';
+    allImages += '<div class="portfolio-grid-item__overlay"><h2 class="portfolio-grid-item__overlay__title">Hello!!!</h2><button class="button">View Project</button></div>';
     allImages += '</div></div>';
   }
 
