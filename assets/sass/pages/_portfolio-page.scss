@@ -1,7 +1,7 @@
 .portfolio-grid {
   column-count: 5;
   column-gap: 5;
-  margin: 180px 0 0;
+  margin: 180px 0 20px;
 
   img {
     height: auto;
@@ -16,7 +16,6 @@
 
 .portfolio-grid-item {
   line-height: 0;
-  overflow: hidden;
   position: relative;
   transition: .5s;
 
@@ -27,7 +26,7 @@
 
 .portfolio-grid-item__overlay {
   align-items: center;
-  background: rgba($black, .65);
+  background: rgba($black, .50);
   bottom: 0;
   color: $white;
   display: flex;
