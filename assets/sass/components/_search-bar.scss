@@ -6,6 +6,10 @@
   margin: -70px 0 0;
   padding: 0;
   position: relative;
+
+  img {
+    margin: 6px 6px 0 0;
+  }
 }
 
 input[type="text"] {
@@ -38,7 +42,7 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-  background: url('assets/images/logo.png');
+  background: url(''); // NOTE: Removing this breaks the search bar.
   border: 0;
   cursor: pointer;
   display: inline-block;
@@ -55,9 +59,5 @@ input[type="submit"] {
 
   &:hover {
     opacity: .8;
-  }
-
-  img {
-    margin: 10px 10px 0 0;
   }
 }

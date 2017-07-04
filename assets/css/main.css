@@ -284,6 +284,10 @@ a {
   position: relative;
 }
 
+.filter--search____searchbar img {
+  margin: 6px 6px 0 0;
+}
+
 input[type="text"] {
   background: none;
   border: 0;
@@ -315,7 +319,7 @@ input[type="text"]:focus:hover {
 }
 
 input[type="submit"] {
-  background: url("assets/images/logo.png");
+  background: url("");
   border: 0;
   cursor: pointer;
   display: inline-block;
@@ -334,10 +338,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   opacity: .8;
-}
-
-input[type="submit"] img {
-  margin: 10px 10px 0 0;
 }
 
 .container {
@@ -477,9 +477,9 @@ input[type="submit"] img {
 }
 
 .portfolio-grid {
-  -webkit-column-count: 5;
-     -moz-column-count: 5;
-          column-count: 5;
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
   -webkit-column-gap: 5;
      -moz-column-gap: 5;
           column-gap: 5;
@@ -504,8 +504,8 @@ input[type="submit"] img {
 }
 
 .portfolio-grid-item:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
 }
 
 .portfolio-grid-item__overlay {
@@ -542,14 +542,6 @@ input[type="submit"] img {
   margin-bottom: 10%;
 }
 
-@media (max-width: 1200px) {
-  .portfolio-grid {
-    -webkit-column-count: 4;
-       -moz-column-count: 4;
-            column-count: 4;
-  }
-}
-
 @media (max-width: 1000px) {
   .portfolio-grid {
     -webkit-column-count: 3;
@@ -566,7 +558,7 @@ input[type="submit"] img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .portfolio-grid {
     -webkit-column-count: 1;
        -moz-column-count: 1;

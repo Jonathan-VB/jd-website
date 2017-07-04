@@ -1,5 +1,5 @@
 .portfolio-grid {
-  column-count: 5;
+  column-count: 4;
   column-gap: 5;
   margin: 180px 0 20px;
 
@@ -20,7 +20,7 @@
   transition: .5s;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
   }
 }
 
@@ -48,14 +48,7 @@
   }
 }
 
-
 // NOTE: Tidy up media queries later with Sass function
-@media (max-width: 1200px) {
-  .portfolio-grid {
-    column-count: 4;
-  }
-}
-
 @media (max-width: 1000px) {
   .portfolio-grid {
     column-count: 3;
@@ -68,7 +61,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .portfolio-grid {
     column-count: 1;
   }
