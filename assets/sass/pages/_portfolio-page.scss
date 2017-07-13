@@ -1,7 +1,6 @@
 .portfolio-grid {
   column-count: 4;
-  column-gap: 5;
-  margin: 180px 0 20px;
+  margin: 130px 0 20px;
 
   img {
     height: auto;
@@ -49,19 +48,19 @@
 }
 
 // NOTE: Tidy up media queries later with Sass function
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   .portfolio-grid {
     column-count: 3;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .portfolio-grid {
     column-count: 2;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 500px) {
   .portfolio-grid {
     column-count: 1;
   }
