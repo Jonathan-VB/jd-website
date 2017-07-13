@@ -82,6 +82,14 @@
   }
 }
 
+.portfolio-content--right {
+  float: right;
+  height: 100%;
+  margin-right: 5%;
+  width: 45%;
+}
+
+
 .project-title__active {
   font-size: 1.5em;
 }
@@ -107,13 +115,6 @@
   transition: opacity .75s ease-out;
 }
 
-.portfolio-content--right {
-  float: right;
-  height: 100%;
-  margin-right: 5%;
-  width: 45%;
-}
-
 .project-title--view-all {
   // font-size: 1rem;
 }
@@ -128,11 +129,4 @@
   p {
     padding-bottom: 20px;
   }
-}
-
-// 03 About and contact:
-// Contains information about me and a contact form.
-.about-background {
-  min-height: 100vh;
-  background: purple;
 }

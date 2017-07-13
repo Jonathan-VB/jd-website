@@ -1,0 +1,29 @@
+// About and contact:
+// Contains information about me and a contact form.
+.about-background {
+  background: $color-background-dark;
+  min-height: 100vh;
+}
+
+.about-content {
+  position: relative;
+  top: 15vh;
+}
+
+.about-content--left {
+  float: left;
+  height: 100%;
+  margin-left: 5%;
+  width: 45%;
+
+  p {
+    margin-bottom: 5%;
+  }
+}
+
+.about-content--right {
+  float: right;
+  height: 100%;
+  margin-right: 5%;
+  width: 45%;
+}
