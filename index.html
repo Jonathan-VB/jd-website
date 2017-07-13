@@ -14,11 +14,22 @@
   </head>
 
   <body class="index">
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
     <nav id="navbar-main" class="navbar">
       <ul>
         <li><a href="">PORTFOLIO</a></li>
         <li><a href="index.html"><img src="assets/images/logo.png" class="logo"/></a></li>
-        <li><a href="">ABOUT ME</a></li>
+        <li><a onclick="openOverlay()">ABOUT ME</a></li>
       </ul>
     </nav>
 
@@ -103,5 +114,14 @@
 
     <script src="assets/js/jquery-3.1.1.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+      function openOverlay() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeOverlay() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
   </body>
 </html>
