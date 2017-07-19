@@ -103,6 +103,10 @@ a {
   text-decoration: none;
 }
 
+.text--bold {
+  font-family: "Roboto Black", Arial, Helvetica, sans-serif;
+}
+
 @-webkit-keyframes logoGlow {
   from {
     border-radius: 50%;
@@ -583,6 +587,12 @@ input[type="submit"]:hover {
   width: 45%;
 }
 
+.about-content--left img {
+  display: block;
+  margin: auto;
+  padding: 0 0 5%;
+}
+
 .about-content--left p {
   margin-bottom: 5%;
 }
@@ -591,7 +601,13 @@ input[type="submit"]:hover {
   float: right;
   height: 100%;
   margin-right: 5%;
+  text-align: right;
   width: 45%;
+}
+
+.about-content--right h1 {
+  font-size: 4vw;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
