@@ -13,7 +13,7 @@
 .about-content--left {
   float: left;
   height: 100%;
-  margin-left: 5%;
+  margin-right: 5%;
   width: 45%;
 
   img {
@@ -30,12 +30,27 @@
 .about-content--right {
   float: right;
   height: 100%;
-  margin-right: 5%;
+  margin-left: 5%;
   text-align: right;
   width: 45%;
 
   h1 {
     font-size: 4vw;
     margin-top: 20px;
+  }
+}
+
+.about__icons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 0;
+
+  a {
+    margin-left: 30px;
+  }
+
+  img {
+    height: auto;
+    width: 25px;
   }
 }

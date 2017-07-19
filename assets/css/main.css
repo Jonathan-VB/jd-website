@@ -583,7 +583,7 @@ input[type="submit"]:hover {
 .about-content--left {
   float: left;
   height: 100%;
-  margin-left: 5%;
+  margin-right: 5%;
   width: 45%;
 }
 
@@ -600,7 +600,7 @@ input[type="submit"]:hover {
 .about-content--right {
   float: right;
   height: 100%;
-  margin-right: 5%;
+  margin-left: 5%;
   text-align: right;
   width: 45%;
 }
@@ -608,6 +608,25 @@ input[type="submit"]:hover {
 .about-content--right h1 {
   font-size: 4vw;
   margin-top: 20px;
+}
+
+.about__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 25px 0;
+}
+
+.about__icons a {
+  margin-left: 30px;
+}
+
+.about__icons img {
+  height: auto;
+  width: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
