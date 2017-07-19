@@ -497,19 +497,19 @@ input[type="submit"]:hover {
 .portfolio-grid-item {
   line-height: 0;
   position: relative;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .250s;
+  transition: .250s;
 }
 
 .portfolio-grid-item:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .portfolio-grid-item__overlay {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   background: rgba(0, 0, 0, .5);
   bottom: 0;
   color: #fff;
@@ -520,24 +520,26 @@ input[type="submit"]:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   left: 0;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   right: 0;
-  top: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.portfolio-grid-item__overlay:hover {
-  opacity: 1;
 }
 
 .portfolio-grid-item__overlay__title {
-  margin-bottom: 10%;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin: 0 0 0 5%;
+}
+
+.portfolio-grid-item__overlay__subtitle {
+  font-size: 14.4px;
+  font-size: .9rem;
+  margin: 20px 0 0 5%;
 }
 
 @media (max-width: 1400px) {

@@ -16,34 +16,40 @@
 .portfolio-grid-item {
   line-height: 0;
   position: relative;
-  transition: .5s;
+  transition: .250s;
 
   &:hover {
-    transform: scale(1.025);
+    transform: scale(1.03);
   }
 }
 
 .portfolio-grid-item__overlay {
-  align-items: center;
+  align-items: left;
   background: rgba($black, .50);
   bottom: 0;
   color: $white;
   display: flex;
   flex-direction: column;
+  height: 60px;
   justify-content: center;
   left: 0;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   right: 0;
-  top: 0;
-  transition: .5s;
+  // transition: .250s;
 
-  &:hover {
-    opacity: 1;
-  }
+  // &:hover {
+  //   opacity: 1;
+  // }
 
   &__title {
-    margin-bottom: 10%;
+    font-size: 1.2rem;
+    margin: 0 0 0 5%;
+  }
+
+  &__subtitle {
+    font-size: .9rem;
+    margin: 20px 0 0 5%;
   }
 }
 
