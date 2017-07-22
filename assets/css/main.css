@@ -188,6 +188,11 @@ a {
           transform: scale(1.05);
 }
 
+.button__submit {
+  padding: 2%;
+  width: 100%;
+}
+
 .navbar {
   background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5), rgba(255, 255, 255, 0));
   background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5), rgba(255, 255, 255, 0));
@@ -287,7 +292,7 @@ a {
   margin: 6px 6px 0 0;
 }
 
-input[type="text"] {
+.filter--search____searchbar input[type="text"] {
   background: none;
   border: 0;
   color: #fff;
@@ -306,18 +311,18 @@ input[type="text"] {
   z-index: 3;
 }
 
-input[type="text"]:focus {
+.filter--search____searchbar input[type="text"]:focus {
   border-bottom: 1px solid #fff;
   cursor: text;
   width: 250px;
   z-index: 1;
 }
 
-input[type="text"]:focus:hover {
+.filter--search____searchbar input[type="text"]:focus:hover {
   border-bottom: 1px solid #fff;
 }
 
-input[type="submit"] {
+.filter--search____searchbar input[type="submit"] {
   background: url("");
   border: 0;
   cursor: pointer;
@@ -335,8 +340,34 @@ input[type="submit"] {
   z-index: 2;
 }
 
-input[type="submit"]:hover {
+.filter--search____searchbar input[type="submit"]:hover {
   opacity: .8;
+}
+
+input,
+textarea {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Roboto Black", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  padding: 2%;
+  text-align: right;
+  text-transform: uppercase;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  width: 96%;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #009ea8;
+  outline: none;
+  overflow: visible;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .container {
@@ -606,7 +637,7 @@ input[type="submit"]:hover {
 }
 
 .about-content--right h1 {
-  font-size: 4vw;
+  font-size: 5vw;
   margin-top: 20px;
 }
 
@@ -617,7 +648,7 @@ input[type="submit"]:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 .about__icons a {

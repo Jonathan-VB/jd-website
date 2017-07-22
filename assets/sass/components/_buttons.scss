@@ -12,7 +12,12 @@
   &:hover {
     // Change this to a particular projects theme colour later.
     border: 3px solid $color-primary;
-    overflow: visible; // transition: .5s;
+    overflow: visible;
     transform: scale(1.05);
+  }
+
+  &__submit {
+    padding: 2%;
+    width: 100%;
   }
 }
