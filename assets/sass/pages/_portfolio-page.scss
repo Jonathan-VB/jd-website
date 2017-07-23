@@ -26,6 +26,7 @@
 .portfolio-grid-item__overlay {
   align-items: left;
   background: rgba($black, .50);
+  border-bottom: 3px solid $color-primary;
   bottom: 0;
   color: $white;
   display: flex;
