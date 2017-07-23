@@ -44,10 +44,16 @@
             <a href="#"><img src="assets/images/IconLinkedin.png" /></a>
           </div>
 
-          <form action="" method="POST">
-            <input type="text" name="email" placeholder="Name" /><br />
-            <input type="email" name="email" placeholder="Email" /><br />
-            <textarea rows="10" placeholder="Message"></textarea>
+          <!-- TODO: Add AJAX functionality -->
+          <form action="/jd-website/contact-form-submit.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Name" required /><br />
+            <input type="email" name="email" placeholder="Email" required /><br />
+            <textarea rows="10" name="message" placeholder="Message" required></textarea>
+
+            <label style="display:none" for="address">Address</label>
+            <input style="display:none" type="text" id="address" name="address" />
+            <p style="display:none" >Please leave this field blank</p>
+
             <button class="button button__submit" type="submit" name="submit">SUBMIT</button>
           </form>
         </div>
