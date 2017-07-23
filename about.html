@@ -45,7 +45,7 @@
           </div>
 
           <!-- TODO: Add AJAX functionality -->
-          <form action="/jd-website/contact-form-submit.php" method="POST" enctype="multipart/form-data">
+          <form id="form" action="/jd-website/contact-form-submit.php" method="POST" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="Name" required /><br />
             <input type="email" name="email" placeholder="Email" required /><br />
             <textarea rows="10" name="message" placeholder="Message" required></textarea>
@@ -56,6 +56,15 @@
 
             <button class="button button__submit" type="submit" name="submit">SUBMIT</button>
           </form>
+
+          <div class="form-submission--success">
+            <p>THANK YOU FOR YOUR SUBMISSION!</p>
+          </div>
+
+          <div class="form-submission--fail">
+            <p>OOPS... LOOKS LIKE SOMETHING WENT WRONG :(</p>
+            <p>PLEASE TRY AGAIN LATER!</p>
+          </div>
         </div>
       </div>
     </div>
@@ -64,6 +73,23 @@
   </section>
 
   <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script>
+  $("#form").submit(function(event){
+    event.preventDefault(); //prevent default action
+    var post_url = $(this).attr("action"); //get form action url
+    var request_method = $(this).attr("method"); //get form GET/POST method
+    var form_data = $(this).serialize(); //Encode form elements for submission
+
+    $.ajax({
+      url : post_url,
+      type: request_method,
+      data : form_data
+    }).done(function(response){
+      $('#form').fadeOut(350);
+      $('.form-submission--success').delay(351).fadeIn(350);
+    });
+  });
+  </script>
   <!-- <script src="assets/js/app.js"></script> -->
 </body>
 </html>

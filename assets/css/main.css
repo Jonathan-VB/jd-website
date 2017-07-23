@@ -370,6 +370,25 @@ textarea:focus {
           transform: scale(1.05);
 }
 
+.form-submission--success,
+.form-submission--fail {
+  display: none;
+  left: 50%;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.form-submission--success p,
+.form-submission--fail p {
+  font-family: "Roboto Black", Arial, Helvetica, sans-serif;
+  font-size: 5vw;
+  margin-top: 20px;
+  text-align: center;
+}
+
 .container {
   margin: 0 auto;
   width: 90%;
