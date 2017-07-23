@@ -74,6 +74,8 @@
 
   <script src="assets/js/jquery-3.1.1.min.js"></script>
   <script>
+
+  // AJAX form submission
   $("#form").submit(function(event){
     event.preventDefault(); //prevent default action
     var post_url = $(this).attr("action"); //get form action url
@@ -83,12 +85,19 @@
     $.ajax({
       url : post_url,
       type: request_method,
-      data : form_data
-    }).done(function(response){
-      $('#form').fadeOut(350);
-      $('.form-submission--success').delay(351).fadeIn(350);
-    });
-  });
+      data : form_data,
+      success: function(){
+        $('#form').fadeOut(350);
+        $('.form-submission--success').delay(351).fadeIn(350);
+      },
+      fail: function(XMLHttpRequest, textStatus, errorThrown) {
+        $('#form').fadeOut(350);
+        $('.form-submission--fail').delay(351).fadeIn(350);
+        alert("Status: " + textStatus); alert("Error: " + errorThrown);
+      }
+    }); // end ajax
+  }); // end submit
+
   </script>
   <!-- <script src="assets/js/app.js"></script> -->
 </body>
