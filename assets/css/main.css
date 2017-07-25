@@ -670,9 +670,8 @@ textarea:focus {
   margin-left: 30px;
 }
 
-.about__icons img {
-  height: auto;
-  width: 25px;
+.about__icons object {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=main.css.map */
