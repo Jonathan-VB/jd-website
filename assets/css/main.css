@@ -362,6 +362,13 @@ textarea {
   width: 96%;
 }
 
+@media only screen and (max-width: 767px) {
+  input,
+  textarea {
+    text-align: left;
+  }
+}
+
 input:focus,
 textarea:focus {
   border: 2px solid #009ea8;
@@ -369,6 +376,12 @@ textarea:focus {
   overflow: visible;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+@media only screen and (max-width: 767px) {
+  #form {
+    margin-bottom: 30px;
+  }
 }
 
 .form-submission--success,
@@ -633,6 +646,14 @@ textarea:focus {
   width: 45%;
 }
 
+@media only screen and (max-width: 767px) {
+  .about-content--left {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
 .about-content--left img {
   display: block;
   margin: auto;
@@ -651,9 +672,25 @@ textarea:focus {
   width: 45%;
 }
 
+@media only screen and (max-width: 767px) {
+  .about-content--right {
+    float: none;
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+  }
+}
+
 .about-content--right h1 {
   font-size: 5vw;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-content--right h1 {
+    font-size: 38px;
+    white-space: nowrap;
+  }
 }
 
 .about__icons {
@@ -666,8 +703,23 @@ textarea:focus {
   margin: 30px 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .about__icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .about__icons a {
   margin-left: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about__icons a {
+    margin-left: 0;
+    margin-right: 30px;
+  }
 }
 
 .about__icons object {

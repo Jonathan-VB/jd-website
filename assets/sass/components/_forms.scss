@@ -12,12 +12,22 @@ textarea {
   transition: .5s ease;
   width: 96%;
 
+  @include mq('tablet', max) {
+    text-align: left;
+   }
+
   &:focus {
     border: 2px solid $color-primary;
     outline: none;
     overflow: visible;
     transform: scale(1.05);
   }
+}
+
+#form {
+  @include mq('tablet', max) {
+    margin-bottom: 30px;
+   }
 }
 
 .form-submission--success,
