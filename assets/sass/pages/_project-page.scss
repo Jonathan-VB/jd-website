@@ -1,0 +1,39 @@
+.heading {
+  margin-top: 100px;
+
+  &::before {
+    background: $color-primary;
+    box-shadow: 1px 1px 2px $color-text-shadow;
+    content: '';
+    display: inline-block;
+    height: 400px;
+    margin: -300px 0 0 -200px;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 400px;
+    z-index: z('portfolio-heading-triangle');
+  }
+}
+
+.heading-background {
+  background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
+  background-size: cover;
+  height: auto;
+}
+
+.heading-content {
+  padding: 175px 0;
+  text-align: left;
+  width: 100%;
+
+  h1 {
+    font-size: 5vw;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px $color-text-shadow;
+  }
+
+  h2 {
+    font-size: 3vw;
+    text-shadow: 1px 1px 2px $color-text-shadow;
+  }
+}

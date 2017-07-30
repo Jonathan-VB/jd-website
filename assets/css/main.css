@@ -403,6 +403,10 @@ textarea:focus {
   max-width: 1280px;
 }
 
+.container--small {
+  width: 80%;
+}
+
 .index {
   overflow: hidden;
 }
@@ -724,6 +728,48 @@ textarea:focus {
 
 .about__icons object {
   pointer-events: none;
+}
+
+.heading {
+  margin-top: 100px;
+}
+
+.heading::before {
+  background: #009ea8;
+  box-shadow: 1px 1px 2px #111;
+  content: '';
+  display: inline-block;
+  height: 400px;
+  margin: -300px 0 0 -200px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 400px;
+  z-index: 2;
+}
+
+.heading-background {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
+  background-size: cover;
+  height: auto;
+}
+
+.heading-content {
+  padding: 175px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.heading-content h1 {
+  font-size: 5vw;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px #111;
+}
+
+.heading-content h2 {
+  font-size: 3vw;
+  text-shadow: 1px 1px 2px #111;
 }
 
 /*# sourceMappingURL=main.css.map */
