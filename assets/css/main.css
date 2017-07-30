@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -770,6 +771,49 @@ textarea:focus {
 .heading-content h2 {
   font-size: 3vw;
   text-shadow: 1px 1px 2px #111;
+}
+
+.intro p {
+  font-size: 20px;
+  padding: 80px 0 100px;
+  text-align: center;
+}
+
+.divider__circle--white {
+  background: #fff;
+  border-radius: 50%;
+  color: #009ea8;
+  content: '';
+  display: inline-block;
+  height: 100px;
+  left: 50%;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+}
+
+.divider__circle--white::after {
+  color: #009ea8;
+  content: '▽';
+  display: inline-block;
+  font-size: 30px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-body {
+  background: #fff;
+  margin-top: -50px;
+  padding-top: 80px;
+}
+
+.main-body p {
+  color: #111;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,5 @@
+// 01 Main landing section
+// Contains the site heading (my name!) and sub heading and triangle overlay.
 .heading {
   margin-top: 100px;
 
@@ -35,5 +37,51 @@
   h2 {
     font-size: 3vw;
     text-shadow: 1px 1px 2px $color-text-shadow;
+  }
+}
+
+// 02 Introduction section
+// Contains an introduction paragraph about the project and a divider.
+.intro {
+  p {
+    font-size: 20px;
+    padding: 80px 0 100px;
+    text-align: center;
+  }
+}
+
+.divider__circle--white {
+  background: $white;
+  border-radius: 50%;
+  color: $color-primary;
+  content: '';
+  display: inline-block;
+  height: 100px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  width: 100px;
+
+  &::after {
+    color: $color-primary;
+    content: '▽';
+    display: inline-block;
+    font-size: 30px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+.main-body {
+  background: $white;
+  margin-top: -50px;
+  padding-top: 80px;
+
+  p {
+    color: $color-background-dark;
+    font-size: 18px;
   }
 }
