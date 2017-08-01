@@ -45,7 +45,7 @@
 .intro {
   p {
     font-size: 20px;
-    padding: 80px 0 100px;
+    padding: 80px 0;
     text-align: center;
   }
 }
@@ -66,11 +66,15 @@
     color: $color-primary;
     content: '▽';
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: bouncingArrow;
   }
 }
 
