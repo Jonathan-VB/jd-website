@@ -63,6 +63,9 @@
   width: 100px;
 
   &::after {
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: bouncingArrow;
     color: $color-primary;
     content: '▽';
     display: inline-block;
@@ -71,21 +74,28 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-name: bouncingArrow;
   }
 }
-
 
 .main-body {
   background: $white;
   margin-top: -50px;
-  padding-top: 80px;
+  padding: 80px 0;
 
   p {
     color: $color-background-dark;
     font-size: 18px;
+    margin-bottom: 30px;
   }
+}
+
+.dropcap {
+  color: $color-primary;
+  float: left;
+  font-family: $font-roboto-black;
+  font-size: 100px;
+  line-height: 40px;
+  margin-top: 20px;
+  padding-bottom: 7px;
+  padding-right: 7px;
 }
