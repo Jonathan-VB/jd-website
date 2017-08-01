@@ -758,8 +758,17 @@ textarea:focus {
   }
 }
 
+.about__icons path {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .about__icons a {
   margin-left: 30px;
+}
+
+.about__icons a:hover path, .about__icons a:focus path, .about__icons a:active path {
+  fill: #009ea8;
 }
 
 @media only screen and (max-width: 767px) {

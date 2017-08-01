@@ -67,8 +67,20 @@
     justify-content: flex-start;
    }
 
+  path {
+    transition: .5s;
+  }
+
   a {
     margin-left: 30px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      path {
+        fill: $color-primary;
+      }
+    }
 
     @include mq('tablet', max) {
       margin-left: 0;
