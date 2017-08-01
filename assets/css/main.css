@@ -853,6 +853,28 @@ textarea:focus {
           transform: translate(-50%, -50%);
 }
 
+.portfolio-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto Black", Arial, Helvetica, sans-serif;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 30px 0;
+}
+
+.portfolio-options a {
+  color: #111;
+  margin-right: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.portfolio-options a:hover, .portfolio-options a:focus, .portfolio-options a:active {
+  color: #009ea8;
+}
+
 .main-body {
   background: #fff;
   margin-top: -50px;

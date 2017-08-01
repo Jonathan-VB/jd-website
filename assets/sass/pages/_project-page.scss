@@ -77,6 +77,25 @@
   }
 }
 
+.portfolio-options {
+  display: flex;
+  font-family:$font-roboto-black;
+  justify-content: flex-start;
+  margin: 30px 0;
+
+  a {
+    color: $color-background-dark;
+    margin-right: 30px;
+    transition: .5s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-primary;
+    }
+  }
+}
+
 .main-body {
   background: $white;
   margin-top: -50px;
