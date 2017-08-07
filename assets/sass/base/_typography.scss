@@ -46,9 +46,18 @@ h4 {
   font-style: italic;
 }
 
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
 p {
   color: $white;
   font-family: $font-roboto-light;
+  font-size: 18px;
   line-height: 1.5;
 }
 

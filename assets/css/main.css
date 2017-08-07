@@ -94,9 +94,18 @@ h4 {
   font-style: italic;
 }
 
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
 p {
   color: #fff;
   font-family: "Roboto light", Arial, Helvetica, sans-serif;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -472,13 +481,13 @@ textarea:focus {
 }
 
 .landing-content h1 {
-  font-size: 8vw;
+  font-size: 100px;
   margin-bottom: 5px;
   text-shadow: 1px 1px 2px #111;
 }
 
 .landing-content h2 {
-  font-size: 3.5vw;
+  font-size: 40px;
   text-shadow: 1px 1px 2px #111;
 }
 
@@ -490,6 +499,7 @@ textarea:focus {
   height: calc(100vh - 100px);
   left: 0;
   position: absolute;
+  text-shadow: 0.5px 0.5px 0.5px #111;
   top: 100vh;
   width: 100%;
 }
@@ -527,7 +537,6 @@ textarea:focus {
   height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-transform: uppercase;
 }
 
 .portfolio-content--left li {
@@ -535,8 +544,13 @@ textarea:focus {
 }
 
 .portfolio-content--left li h3 {
+  text-transform: uppercase;
   -webkit-transition: .750s;
   transition: .750s;
+}
+
+.portfolio-content--left li h4 {
+  margin-top: 5px;
 }
 
 .portfolio-content--right {
@@ -547,7 +561,7 @@ textarea:focus {
 }
 
 .project-title__active {
-  font-size: 1.5em;
+  font-size: 28px;
 }
 
 .project--1__subtitle,
@@ -555,6 +569,7 @@ textarea:focus {
 .project--3__subtitle,
 .project--4__subtitle,
 .project--5__subtitle {
+  font-size: 24px;
   margin-left: -200px;
   opacity: 0;
   -webkit-transition: .750s;
@@ -571,6 +586,19 @@ textarea:focus {
   overflow: hidden;
   -webkit-transition: opacity .75s ease-out;
   transition: opacity .75s ease-out;
+}
+
+.project--1__description p,
+.project--2__description p,
+.project--3__description p,
+.project--4__description p,
+.project--5__description p {
+  font-size: 20px;
+}
+
+.project-title--view-all {
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 .project-description {
