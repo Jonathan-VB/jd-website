@@ -83,6 +83,14 @@
   justify-content: flex-start;
   margin: 30px 0;
 
+  svg {
+    margin-bottom: -8px;
+  }
+
+  path {
+    transition: .5s;
+  }
+
   a {
     color: $color-background-dark;
     margin-right: 30px;
@@ -92,6 +100,9 @@
     &:focus,
     &:active {
       color: $color-primary;
+        path {
+          fill: $color-primary;
+        }
     }
   }
 }
