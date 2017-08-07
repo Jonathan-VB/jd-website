@@ -633,6 +633,7 @@ textarea:focus {
 
 .portfolio-grid-item {
   line-height: 0;
+  margin-bottom: 20px;
   position: relative;
   -webkit-transition: .250s;
   transition: .250s;
@@ -672,11 +673,10 @@ textarea:focus {
   font-size: 19.2px;
   font-size: 1.2rem;
   margin: 0 0 0 5%;
+  text-transform: uppercase;
 }
 
 .portfolio-grid-item__overlay__subtitle {
-  font-size: 14.4px;
-  font-size: .9rem;
   margin: 20px 0 0 5%;
 }
 
