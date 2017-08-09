@@ -486,9 +486,28 @@ textarea:focus {
   text-shadow: 1px 1px 2px #111;
 }
 
+@media only screen and (max-width: 1023px) {
+  .landing-content h1 {
+    font-size: 70px;
+  }
+}
+
 .landing-content h2 {
   font-size: 40px;
   text-shadow: 1px 1px 2px #111;
+}
+
+@media only screen and (max-width: 1023px) {
+  .landing-content h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .landing-content h2 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
 }
 
 .portfolio-background {
