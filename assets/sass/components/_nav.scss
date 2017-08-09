@@ -41,7 +41,7 @@
     &:nth-child(2) {
       animation-duration: 4s;
       animation-iteration-count: infinite;
-      animation-name: logoPulse;
+      animation-name: pulse;
     }
 
     &:nth-child(2)::before {
@@ -59,7 +59,9 @@
     }
   }
 
-  li:hover::after {
+  li:hover::after,
+  li:focus::after,
+  li:active::after {
     background: $color-primary;
     width: 100%;
   }

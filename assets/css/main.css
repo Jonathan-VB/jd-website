@@ -147,7 +147,7 @@ a {
   }
 }
 
-@-webkit-keyframes logoPulse {
+@-webkit-keyframes pulse {
   from {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -162,7 +162,7 @@ a {
   }
 }
 
-@keyframes logoPulse {
+@keyframes pulse {
   from {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -294,8 +294,8 @@ a {
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-name: logoPulse;
-          animation-name: logoPulse;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
 }
 
 .navbar li:nth-child(2)::before {
@@ -316,7 +316,9 @@ a {
   width: 100%;
 }
 
-.navbar li:hover::after {
+.navbar li:hover::after,
+.navbar li:focus::after,
+.navbar li:active::after {
   background: #009ea8;
   width: 100%;
 }
@@ -464,10 +466,27 @@ textarea:focus {
 }
 
 .landing-background {
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.landing-background::before {
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
   background: -webkit-linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
   background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
   background-size: cover;
+  content: '';
   height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  z-index: -1;
 }
 
 .landing-content {
@@ -618,6 +637,14 @@ textarea:focus {
 .project-title--view-all {
   font-size: 22px;
   text-transform: uppercase;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.project-title--view-all:hover, .project-title--view-all:focus, .project-title--view-all:active {
+  margin-left: 5px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .project-description {
