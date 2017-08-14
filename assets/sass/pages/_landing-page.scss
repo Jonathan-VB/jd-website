@@ -41,6 +41,10 @@
     @include mq('tablet-wide', max) {
       font-size: 70px;
     }
+
+    @include mq('tablet', max) {
+      font-size: 55px;
+    }
   }
 
   h2 {
@@ -48,11 +52,11 @@
     text-shadow: 1px 1px 2px $color-text-shadow;
 
     @include mq('tablet-wide', max) {
-      font-size: 30px;
+      font-size: 35px;
     }
 
     @include mq('tablet', max) {
-      font-size: 25px;
+      font-size: 22px;
       margin-top: 10px;
     }
   }
@@ -60,6 +64,12 @@
 
 // 02 Portolio section:
 // Contains the five featured portfolio items.
+.portfolio {
+  @include mq('tablet', max) {
+    display: none;
+  }
+}
+
 .portfolio-background {
   height: 100vh;
 }
@@ -81,10 +91,10 @@
   position: fixed;
   top: 12vh;
 
-  &-transition {
-    top: -100vh;
-    transition: .750s;
-  }
+  // &-transition {
+  //   top: -100vh;
+  //   transition: .750s;
+  // }
 }
 
 .portfolio-content--left {
