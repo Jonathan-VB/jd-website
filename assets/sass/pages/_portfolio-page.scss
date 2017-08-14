@@ -10,12 +10,11 @@
 
 .portfolio-grid-item__container {
   margin-bottom: 1em;
-  text-align: center;
+  text-align: left;
 }
 
 .portfolio-grid-item {
-  line-height: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
   transition: .250s;
 
@@ -26,33 +25,28 @@
 
 .portfolio-grid-item__overlay {
   align-items: left;
-  background: rgba($black, .50);
+  background: rgba($black, .80);
   border-bottom: 3px solid $color-primary;
   bottom: 0;
   color: $white;
   display: flex;
   flex-direction: column;
-  height: 60px;
+  height: auto;
   justify-content: center;
   left: 0;
   opacity: 1;
   position: absolute;
   right: 0;
-  // transition: .250s;
-
-  // &:hover {
-  //   opacity: 1;
-  // }
 
   &__title {
-    font-size: 1.2rem;
-    margin: 0 0 0 5%;
+    font-size: 1.4rem;
+    margin: 10px 0 0 5%;
     text-transform: uppercase;
   }
 
   &__subtitle {
-    // font-size: .9rem;
-    margin: 20px 0 0 5%;
+    font-size: 1.1rem;
+    margin: 5px 0 10px 5%;
   }
 }
 
