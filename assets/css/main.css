@@ -632,14 +632,6 @@ textarea:focus {
   transition: opacity .75s ease-out;
 }
 
-.project--1__description p,
-.project--2__description p,
-.project--3__description p,
-.project--4__description p,
-.project--5__description p {
-  font-size: 20px;
-}
-
 .project-title--view-all {
   font-size: 22px;
   text-transform: uppercase;
@@ -885,6 +877,12 @@ textarea:focus {
   z-index: 2;
 }
 
+@media only screen and (max-width: 767px) {
+  .heading::before {
+    display: none;
+  }
+}
+
 .heading-background {
   background: -webkit-linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
   background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
@@ -898,15 +896,33 @@ textarea:focus {
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .heading-content {
+    padding: 120px 0;
+  }
+}
+
 .heading-content h1 {
-  font-size: 5vw;
+  font-size: 50px;
   margin-bottom: 5px;
   text-shadow: 1px 1px 2px #111;
 }
 
+@media only screen and (max-width: 767px) {
+  .heading-content h1 {
+    font-size: 34px;
+  }
+}
+
 .heading-content h2 {
-  font-size: 3vw;
+  font-size: 25px;
   text-shadow: 1px 1px 2px #111;
+}
+
+@media only screen and (max-width: 767px) {
+  .heading-content h2 {
+    font-size: 22px;
+  }
 }
 
 .intro p {
@@ -958,8 +974,20 @@ textarea:focus {
   margin: 30px 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-options {
+    text-align: center;
+  }
+}
+
 .portfolio-options svg {
   margin-bottom: -8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-options svg {
+    margin-top: 10px;
+  }
 }
 
 .portfolio-options path {

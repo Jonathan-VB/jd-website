@@ -90,11 +90,6 @@
 .portfolio-content--fixed-top {
   position: fixed;
   top: 12vh;
-
-  // &-transition {
-  //   top: -100vh;
-  //   transition: .750s;
-  // }
 }
 
 .portfolio-content--left {
@@ -156,10 +151,6 @@
   opacity: 0;
   overflow: hidden;
   transition: opacity .75s ease-out;
-
-  p {
-    font-size: 20px;
-  }
 }
 
 .project-title--view-all {

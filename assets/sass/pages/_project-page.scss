@@ -14,6 +14,10 @@
     transform: rotate(45deg);
     width: 400px;
     z-index: z('portfolio-heading-triangle');
+
+    @include mq('tablet', max) {
+      display: none;
+    }
   }
 }
 
@@ -28,15 +32,27 @@
   text-align: left;
   width: 100%;
 
+  @include mq('tablet', max) {
+    padding: 120px 0;
+  }
+
   h1 {
-    font-size: 5vw;
+    font-size: 50px;
     margin-bottom: 5px;
     text-shadow: 1px 1px 2px $color-text-shadow;
+
+    @include mq('tablet', max) {
+      font-size: 34px;
+    }
   }
 
   h2 {
-    font-size: 3vw;
+    font-size: 25px;
     text-shadow: 1px 1px 2px $color-text-shadow;
+
+    @include mq('tablet', max) {
+      font-size: 22px;
+    }
   }
 }
 
@@ -83,8 +99,16 @@
   justify-content: flex-start;
   margin: 30px 0;
 
+  @include mq('tablet', max) {
+    text-align: center;
+  }
+
   svg {
     margin-bottom: -8px;
+
+    @include mq('tablet', max) {
+      margin-top: 10px;
+    }
   }
 
   path {
@@ -100,9 +124,10 @@
     &:focus,
     &:active {
       color: $color-primary;
-        path {
-          fill: $color-primary;
-        }
+
+      path {
+        fill: $color-primary;
+      }
     }
   }
 }
