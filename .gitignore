@@ -48,3 +48,14 @@ Temporary Items
 
 # Node modules
 node_modules/
+
+# WordPress ignores
+.htaccess
+wp-config.php
+wp-content/*
+!wp-content/themes/
+!wp-content/plugins/
+sitemap.xml
+*.log
+sitemap.xml
+sitemap.xml.gz
