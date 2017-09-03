@@ -8,10 +8,7 @@ jQuery( document ).ready( function( $ ) {
 
   // NOTE: Clean up: Transition from About to Portfolio not animated correctly.
   $window.scroll(function() {
-    // console.log($window.scrollTop());
-    // console.log(aboutStart);
     if ($window.scrollTop() >= distance && $window.scrollTop() >= aboutStart) {
-      // console.log("hello");
       port.addClass('portfolio-content--fixed-top-transition');
     } else if ($window.scrollTop() >= distance){
       navbar.addClass('navbar--fixed-top');
@@ -47,7 +44,7 @@ jQuery( document ).ready( function( $ ) {
       div++;
     }
 
-    console.log(div, dir, divs.length);
+    // console.log(div, dir, divs.length);
 
     // Animation, class and CSS alterations for the focused project.
     function showProject(activeProject) {
