@@ -1,29 +1,28 @@
-// Sticky navbar and portfolio content.
-var navbar = $('#navbar-main'),
-    port = $('.portfolio-content'),
-    distance = navbar.offset().top,
-    $window = $(window);
-    aboutStart = distance * 6;
-    // aboutEnd = distance * 6.1;
+jQuery( document ).ready( function( $ ) {
+  // Sticky navbar and portfolio content.
+  var navbar = $('#navbar-main'),
+      port = $('.portfolio-content'),
+      distance = navbar.offset().top,
+      $window = $(window);
+      aboutStart = distance * 6;
 
-// NOTE: Clean up: Transition from About to Portfolio not animated correctly.
-$window.scroll(function() {
-  // console.log($window.scrollTop());
-  // console.log(aboutStart);
-  if ($window.scrollTop() >= distance && $window.scrollTop() >= aboutStart) {
-    // console.log("hello");
-    port.addClass('portfolio-content--fixed-top-transition');
-  } else if ($window.scrollTop() >= distance){
-    navbar.addClass('navbar--fixed-top');
-    port.addClass('portfolio-content--fixed-top').removeClass('portfolio-content--fixed-top-transition');
-  } else {
-    navbar.removeClass('navbar--fixed-top');
-    port.removeClass('portfolio-content--fixed-top').removeClass('portfolio-content--fixed-top-transition');
-  }
-}); // end sticky navbar
+  // NOTE: Clean up: Transition from About to Portfolio not animated correctly.
+  $window.scroll(function() {
+    // console.log($window.scrollTop());
+    // console.log(aboutStart);
+    if ($window.scrollTop() >= distance && $window.scrollTop() >= aboutStart) {
+      // console.log("hello");
+      port.addClass('portfolio-content--fixed-top-transition');
+    } else if ($window.scrollTop() >= distance){
+      navbar.addClass('navbar--fixed-top');
+      port.addClass('portfolio-content--fixed-top').removeClass('portfolio-content--fixed-top-transition');
+    } else {
+      navbar.removeClass('navbar--fixed-top');
+      port.removeClass('portfolio-content--fixed-top').removeClass('portfolio-content--fixed-top-transition');
+    }
+  }); // end sticky navbar
 
-// Main page scrolling functionality
-$(document).ready(function () {
+
   var divs = $('.scroll-point');
   var dir = 'up'; // wheel scroll direction
   var div = 0; // current div
