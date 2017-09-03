@@ -1,0 +1,98 @@
+// About and contact:
+// Contains information about me and a contact form.
+.about {
+  margin-bottom: 40px;
+}
+
+.about-background {
+  background: $color-background-dark;
+  min-height: 100vh;
+}
+
+.about-content {
+  position: relative;
+  top: 15vh;
+}
+
+.about-content--left {
+  float: left;
+  height: 100%;
+  margin-right: 5%;
+  width: 45%;
+
+  @include mq('tablet', max) {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+   }
+
+  img {
+    display: block;
+    margin: auto;
+    padding: 0 0 5%;
+  }
+
+  p {
+    margin-bottom: 5%;
+  }
+}
+
+.about-content--right {
+  float: right;
+  height: 100%;
+  margin-left: 5%;
+  text-align: right;
+  width: 45%;
+
+  @include mq('tablet', max) {
+    float: none;
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+   }
+
+  h1 {
+    font-size: 5vw;
+    margin-top: 20px;
+
+    @include mq('tablet', max) {
+      font-size: 38px;
+      white-space: nowrap;
+     }
+  }
+}
+
+.about__icons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0;
+
+  @include mq('tablet', max) {
+    justify-content: flex-start;
+   }
+
+  path {
+    transition: .5s;
+  }
+
+  a {
+    margin-left: 30px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      path {
+        fill: $color-primary;
+      }
+    }
+
+    @include mq('tablet', max) {
+      margin-left: 0;
+      margin-right: 30px;
+    }
+  }
+
+  object {
+    pointer-events: none;
+  }
+}

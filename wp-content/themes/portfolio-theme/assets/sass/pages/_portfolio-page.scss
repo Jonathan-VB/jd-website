@@ -1,0 +1,70 @@
+.portfolio-grid {
+  column-count: 4;
+  margin: 130px 0 20px;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.portfolio-grid-item__container {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.portfolio-grid-item {
+  margin-bottom: 10px;
+  position: relative;
+  transition: .250s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.portfolio-grid-item__overlay {
+  align-items: left;
+  background: rgba($black, .80);
+  border-bottom: 3px solid $color-primary;
+  bottom: 0;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+
+  &__title {
+    font-size: 1.4rem;
+    margin: 10px 0 0 5%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 1.1rem;
+    margin: 5px 0 10px 5%;
+  }
+}
+
+// NOTE: Tidy up media queries later with Sass function
+@media (max-width: 1400px) {
+  .portfolio-grid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 860px) {
+  .portfolio-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio-grid {
+    column-count: 1;
+  }
+}

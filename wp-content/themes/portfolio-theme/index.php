@@ -5,7 +5,92 @@
 get_header(); ?>
 
 
-<h1>Hello</h1>
+<nav id="navbar-main" class="navbar">
+  <ul>
+    <li><a href="portfolio-section.html">PORTFOLIO</a></li>
+    <li><a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="logo"/></a></li>
+    <li><a href="about.html">ABOUT ME</a></li>
+  </ul>
+</nav>
+
+<section class="landing">
+  <div class="landing-background scroll-point">
+    <div class="landing-content">
+      <h1>JONATHAN DEMPSEY</h1>
+      <h2>Web Developer &amp; Digital Designer</h2>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-census-ireland.jpg'); no-repeat center center; background-size: cover;">
+  </div>
+
+  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-selfie-app.jpg'); no-repeat center center; background-size: cover;">
+  </div>
+
+  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-valkyrie.jpg'); no-repeat center center; background-size: cover;">
+  </div>
+
+  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-bootstrap-newspaper.jpg'); no-repeat center center; background-size: cover;">
+  </div>
+
+  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-keep-them-safe.jpg'); no-repeat center center; background-size: cover;">
+  </div>
+
+  <div class="portfolio-content">
+    <div class="portfolio-content--left">
+      <ul>
+        <li class="project--1">
+          <h3 class="project--1__title">Census Ireland</h3>
+          <h4 class="project--1__subtitle">Tableau Data Visualisations</h4>
+        </li>
+        <li class="project--2">
+          <h3 class="project--2__title">Selfie App</h3>
+          <h4 class="project--2__subtitle">JavaScript &amp; HTML5 Canvas App</h4>
+        </li>
+        <li class="project--3">
+          <h3 class="project--3__title">Valkyrie</h3>
+          <h4 class="project--3__subtitle">JavaScript &amp; HTML5 Canvas Game</h4>
+        </li>
+        <li class="project--4">
+          <h3 class="project--4__title">Bootstrap Newspaper</h3>
+          <h4 class="project--4__subtitle">Web Design Concepts Using Bootstrap</h4>
+        </li>
+        <li class="project--5">
+          <h3 class="project--5__title">Restful API Games List</h3>
+          <h4 class="project--5__subtitle">MongoDB, Node.js &amp; Backbone.js</h4>
+        </li>
+        <a href="portfolio-section.html"><li class="project-title--view-all">View All Projects</li></a>
+      </ul>
+    </div>
+
+    <div class="portfolio-content--right">
+      <div class="project-description">
+        <div class="project--1__description">
+          <p>Census Ireland is a web application that allows users to dynamically interact with data being displayed on a map of Ireland.</p>
+          <button class="button">View Case Study</button>
+        </div>
+        <div class="project--2__description">
+          <p>The selfie app allows users to take a photo from the video stream and edit the photo using a drawing function, frames and filters. Once the user is done editing their photo they can upload it to a server.</p>
+          <button class="button">View Case Study</button>
+        </div>
+        <div class="project--3__description">
+          <p>A HTML5/JavaScript canvas game was created that allowed users to control Valkyrie, a flying turtle, with the aim of avoiding oncoming missiles.</p>
+          <button class="button">View Case Study</button>
+        </div>
+        <div class="project--4__description">
+          <p>The objective of this project was to create a news website with a home page and article page. The design doesn’t use any images, videos or colour which meant design techniques were established to show contrast between the sites different sections.</p>
+          <button class="button">View Case Study</button>
+        </div>
+        <div class="project--5__description">
+          <p>Keep Them Safe is a website created to help teach parents/guardians how to protect their children from online dangers. Users can access and leave comments on forums and view, add, edit, remove articles and videos, depending on the user's privilage level on the site.</p>
+          <button class="button">View Case Study</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <?php
