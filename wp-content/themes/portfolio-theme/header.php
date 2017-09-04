@@ -13,3 +13,21 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+  <?php if( is_front_page() ) : ?>
+
+    <nav id="navbar-main" class="navbar">
+
+  <?php else : ?>
+
+    <nav id="navbar-main" class="navbar navbar--fixed-top">
+
+  <?php endif ; ?>
+
+    <?php wp_nav_menu( array( 'menu' => 'main-left' ) ); ?>
+
+      <a class="nav-logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="logo"/></a>
+
+    <?php wp_nav_menu( array( 'menu' => 'main-right' ) ); ?>
+
+  </nav>

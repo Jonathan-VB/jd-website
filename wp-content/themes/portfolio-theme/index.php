@@ -5,14 +5,6 @@
 get_header(); ?>
 
 
-<nav id="navbar-main" class="navbar">
-  <ul>
-    <li><a href="portfolio-section.html">PORTFOLIO</a></li>
-    <li><a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="logo"/></a></li>
-    <li><a href="about.html">ABOUT ME</a></li>
-  </ul>
-</nav>
-
 <section class="landing">
   <div class="landing-background scroll-point">
     <div class="landing-content">

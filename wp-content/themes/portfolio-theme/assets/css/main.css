@@ -252,9 +252,6 @@ a {
   position: absolute;
   width: 100%;
   z-index: 1;
-}
-
-.navbar ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -272,6 +269,7 @@ a {
   display: inline-block;
   padding: 5px;
   position: relative;
+  text-transform: uppercase;
   text-shadow: 1px 1px 1px #111;
 }
 
@@ -286,7 +284,20 @@ a {
   width: 0;
 }
 
-.navbar li:nth-child(2) {
+.navbar li:hover::after,
+.navbar li:focus::after,
+.navbar li:active::after {
+  background: #009ea8;
+  width: 100%;
+}
+
+.navbar a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar .nav-logo {
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
@@ -295,7 +306,7 @@ a {
           animation-name: pulse;
 }
 
-.navbar li:nth-child(2)::before {
+.navbar .nav-logo::before {
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
@@ -311,19 +322,6 @@ a {
   -webkit-transform: translate(-7%, -10%);
           transform: translate(-7%, -10%);
   width: 100%;
-}
-
-.navbar li:hover::after,
-.navbar li:focus::after,
-.navbar li:active::after {
-  background: #009ea8;
-  width: 100%;
-}
-
-.navbar a {
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .navbar--fixed-top {

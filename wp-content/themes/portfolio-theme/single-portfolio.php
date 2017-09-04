@@ -9,14 +9,6 @@
 get_header(); ?>
 
 
-<nav id="navbar-main" class="navbar navbar--fixed-top">
-  <ul>
-    <li><a href="index.html#portfolio">PORTFOLIO</a></li>
-    <li><a href="index.html"><img src="assets/images/logo.png" class="logo"/></a></li>
-    <li><a href="about.html">ABOUT ME</a></li>
-  </ul>
-</nav>
-
 <section class="heading">
   <div class="heading-background">
     <div class="container container--small">

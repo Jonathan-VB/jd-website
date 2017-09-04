@@ -25,3 +25,17 @@ function jd_theme_js() {
   wp_enqueue_script( 'main_js', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'jd_theme_js' );
+
+
+/**
+ * Add theme menus.
+ */
+function register_theme_menus() {
+  register_nav_menus (
+    array (
+      'main-left' 	=> __( 'Main Left', 'portfolio-theme' ),
+      'main-right' 	=> __( 'Main Right', 'portfolio-theme' )
+    )
+  );
+}
+add_action( 'init', 'register_theme_menus' );
