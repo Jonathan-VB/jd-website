@@ -12,8 +12,8 @@ get_header(); ?>
 <section class="landing">
   <div class="landing-background scroll-point">
     <div class="landing-content">
-      <h1>JONATHAN DEMPSEY</h1>
-      <h2>Web Developer &amp; Digital Designer</h2>
+      <h1><?php echo the_field( 'home_landing_title' ); ?></h1>
+      <h2><?php echo the_field( 'home_landing_subtitle' ); ?></h2>
     </div>
   </div>
 </section>
