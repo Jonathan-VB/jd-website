@@ -39,3 +39,12 @@ function register_theme_menus() {
   );
 }
 add_action( 'init', 'register_theme_menus' );
+
+
+/**
+ * Remove content editor from 'pages' in the WordPress dashboard.
+ */
+function remove_content_area() {
+  remove_post_type_support( 'page', 'editor' );
+}
+add_action('admin_init', 'remove_content_area');
