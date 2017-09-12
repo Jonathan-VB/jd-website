@@ -6,7 +6,16 @@
 /**
  * get header.php
  */
-get_header(); ?>
+get_header();
+
+
+/**
+ * ACF image variables
+ */
+$attachment_id = get_field( 'about_me_profile_image' );
+$size = "full";
+$image = wp_get_attachment_image_src( $attachment_id, $size );
+$alt = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ); ?>
 
 
 <section class="about">
@@ -14,14 +23,14 @@ get_header(); ?>
     <div class="container">
       <div class="about-content">
         <div class="about-content--left">
-          <img src="assets/images/moi.png" />
+          <img src="<?php echo $image[0]; ?>" alt="<?php echo $alt; ?>" />
           <p>Hi! My name is <span class="text--bold">Jonathan</span>, and I’m a 25 year old Web Developer living in Dublin. In May 2016, I graduated from Dun Laoghaire Institute of Art, Design and Technology with my <span class="text--bold">BSc (Honours) in Multimedia Systems/Web Engineering with a Second Class Honours Grade 1 (2:1)</span>, exciting stuff!</p>
           <p>At the end of June 2017, I finished working as a <span class="text--bold">Junior Web Developer</span> at Viralbamboo, developing web applications in both back-end and front-end using HTML, Sass/CSS, JavaScript, jQuery, PHP, WordPress and Laravel 5, and using Photoshop/Illustrator for creating assets. I also manage and maintain multiple web servers using WHM/cPanel.</p>
           <p>When I’m not spending time working on projects I can be found roaming the streets of Dublin on my trusty bicycle, sitting in front of my piano learning new songs, playing some video games on my Xbox or taking care of my two awesome cats.</p>
         </div>
 
         <div class="about-content--right">
-          <h1>WANNA CHAT?</h1>
+          <h1><?php echo the_field( 'about_me_form_title' ); ?></h1>
           <div class="about__icons">
             <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 438.536 438.536">
