@@ -91,6 +91,6 @@ get_header(); ?>
 
 <?php
 /**
- * get header.php
+ * get footer.php
  */
 get_footer();
