@@ -85,6 +85,12 @@
 
   a {
     color: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-primary;
+    }
   }
 }
 

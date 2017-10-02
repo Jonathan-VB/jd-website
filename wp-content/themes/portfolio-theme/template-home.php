@@ -57,7 +57,7 @@ get_header(); ?>
           <h3 class="project--5__title">Restful API Games List</h3>
           <h4 class="project--5__subtitle">MongoDB, Node.js &amp; Backbone.js</h4>
         </li>
-        <a href="portfolio-section.html"><li class="project-title--view-all">View All Projects</li></a>
+        <a href="<?php echo site_url(); ?>/portfolio"><li class="project-title--view-all">View All Projects</li></a>
       </ul>
     </div>
 

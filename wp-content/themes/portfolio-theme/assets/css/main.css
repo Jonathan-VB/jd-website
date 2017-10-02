@@ -261,7 +261,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 0;
+  padding: 0 0 10px 0;
   width: 100%;
 }
 
@@ -550,6 +550,10 @@ textarea:focus {
   color: #fff;
 }
 
+.portfolio-content a:hover, .portfolio-content a:active, .portfolio-content a:focus {
+  color: #009ea8;
+}
+
 .portfolio-content--fixed-top {
   position: fixed;
   top: 12vh;
@@ -769,6 +773,10 @@ textarea:focus {
 
 .about-content--left p {
   margin-bottom: 5%;
+}
+
+.about-content--left p:last-child {
+  margin-bottom: 10%;
 }
 
 .about-content--right {
