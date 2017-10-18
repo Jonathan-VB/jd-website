@@ -12,7 +12,7 @@
   position: relative;
 
   &::before {
-    animation-duration: 17s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-name: pulse;
     background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
@@ -135,7 +135,7 @@
 
 
 .project-title__active {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .project--1__subtitle,
@@ -143,7 +143,7 @@
 .project--3__subtitle,
 .project--4__subtitle,
 .project--5__subtitle {
-  font-size: 24px;
+  font-size: 22px;
   margin-left: -200px;
   opacity: 0;
   transition: .750s;
@@ -161,17 +161,16 @@
 }
 
 .project-title--view-all {
-  font-size: 22px;
+  font-size: 18px;
   text-transform: uppercase;
   transition: .5s;
 
-    &:hover,
-    &:focus,
-    &:active {
-      margin-left: 5px;
-      transform: scale(1.05);
-    }
-
+  &:hover,
+  &:focus,
+  &:active {
+    // margin-left: 5px;
+    // transform: scale(1.05);
+  }
 }
 
 .project-description {

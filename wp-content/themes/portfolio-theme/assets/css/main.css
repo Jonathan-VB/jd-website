@@ -105,7 +105,7 @@ h4 {
 p {
   color: #fff;
   font-family: "Roboto light", Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -221,19 +221,19 @@ a {
 
 .button {
   background: transparent;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   color: #fff;
   cursor: pointer;
   font-family: "Roboto Black", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14.4px;
+  font-size: .9rem;
   padding: 10px;
   text-transform: uppercase;
   transition: .5s ease;
 }
 
 .button:hover {
-  border: 3px solid #009ea8;
+  border: 2px solid #009ea8;
   overflow: visible;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -465,8 +465,8 @@ textarea:focus {
 }
 
 .landing-background::before {
-  -webkit-animation-duration: 17s;
-          animation-duration: 17s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-name: pulse;
@@ -600,7 +600,7 @@ textarea:focus {
 }
 
 .project-title__active {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .project--1__subtitle,
@@ -608,7 +608,7 @@ textarea:focus {
 .project--3__subtitle,
 .project--4__subtitle,
 .project--5__subtitle {
-  font-size: 24px;
+  font-size: 22px;
   margin-left: -200px;
   opacity: 0;
   transition: .750s;
@@ -626,15 +626,9 @@ textarea:focus {
 }
 
 .project-title--view-all {
-  font-size: 22px;
+  font-size: 18px;
   text-transform: uppercase;
   transition: .5s;
-}
-
-.project-title--view-all:hover, .project-title--view-all:focus, .project-title--view-all:active {
-  margin-left: 5px;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .project-description {
