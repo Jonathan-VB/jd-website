@@ -21,7 +21,7 @@ get_header(); ?>
     <div class="portfolio-grid-item__container">
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-census-ireland.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-census-ireland.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Census Ireland</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">Tableau Data Visualisations</h2>
@@ -31,7 +31,7 @@ get_header(); ?>
 
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-selfie-app.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-selfie-app.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Selfie App</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">JavaScript &amp; HTML5 Canvas App</h2>
@@ -41,7 +41,7 @@ get_header(); ?>
 
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-valkyrie.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-valkyrie.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Valkyrie</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">JavaScript &amp; HTML5 Canvas Game</h2>
@@ -51,7 +51,7 @@ get_header(); ?>
 
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-keep-them-safe.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-keep-them-safe.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Keep Them Safe</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">Internet Safety Website</h2>
@@ -61,7 +61,7 @@ get_header(); ?>
 
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-bootstrap.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-bootstrap.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Bootstrap Newspaper</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">Web Design Concepts Using Bootstrap</h2>
@@ -71,7 +71,7 @@ get_header(); ?>
 
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-deforestation.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-deforestation.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Deforestation Website</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">From Humble Beginnings... Year 1 Project</h2>
@@ -81,7 +81,7 @@ get_header(); ?>
 
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-locomotive.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-locomotive.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Locomotive</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">3D Modelling Using 3DMax</h2>
@@ -91,7 +91,7 @@ get_header(); ?>
 
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-prototype-user-analysis.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-prototype-user-analysis.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Prototyping &amp; User Analysis</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">Census Ireland Prototyping</h2>
@@ -101,7 +101,7 @@ get_header(); ?>
 
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-restful-api-game-list.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-restful-api-game-list.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Keep Them Safe</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">Internet Safety Website</h2>
@@ -111,7 +111,7 @@ get_header(); ?>
 
       <div class="portfolio-grid-item">
         <a href="#">
-          <img src="assets/images/block-significance.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/block-significance.jpg" alt="">
           <div class="portfolio-grid-item__overlay">
             <h1 class="portfolio-grid-item__overlay__title">Significance Testing</h1>
             <h2 class="portfolio-grid-item__overlay__subtitle">Statistical Analysis</h2>
