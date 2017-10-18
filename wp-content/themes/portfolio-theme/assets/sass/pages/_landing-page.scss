@@ -5,23 +5,23 @@
 }
 
 .landing-background {
-  // background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
+  background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
   position: relative;
 
   &::before {
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-name: pulse;
-    background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
-    background-size: cover;
-    content: '';
-    height: 100vh;
-    min-width: 100vw;
-    position: absolute;
-    z-index: -1;
+    // animation-duration: 20s;
+    // animation-iteration-count: infinite;
+    // animation-name: pulse;
+    // background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
+    // background-size: cover;
+    // content: '';
+    // height: 100vh;
+    // min-width: 100vw;
+    // position: absolute;
+    // z-index: -1;
   }
 }
 

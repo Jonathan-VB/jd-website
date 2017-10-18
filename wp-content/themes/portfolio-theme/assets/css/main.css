@@ -466,26 +466,11 @@ textarea:focus {
 }
 
 .landing-background {
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
   position: relative;
-}
-
-.landing-background::before {
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
-  background-size: cover;
-  content: '';
-  height: 100vh;
-  min-width: 100vw;
-  position: absolute;
-  z-index: -1;
 }
 
 .landing-content {
