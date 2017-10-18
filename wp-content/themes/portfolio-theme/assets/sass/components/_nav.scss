@@ -20,6 +20,14 @@
     text-transform: uppercase;
     text-shadow: 1px 1px 1px $color-text-shadow;
 
+    &:first-child {
+      margin-right: 10px;
+    }
+
+    &:last-child {
+      margin-left: 10px;
+    }
+
     &:first-child::after,
     &:last-child::after {
       background: transparent;
@@ -61,7 +69,7 @@
       opacity: .5;
       pointer-events: none;
       position: absolute;
-      transform: translate(-7%, -10%);
+      transform: translate(0%, -10%);
       width: 100%;
     }
   }

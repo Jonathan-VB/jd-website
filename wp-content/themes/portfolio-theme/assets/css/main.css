@@ -273,6 +273,14 @@ a {
   text-shadow: 1px 1px 1px #111;
 }
 
+.navbar li:first-child {
+  margin-right: 10px;
+}
+
+.navbar li:last-child {
+  margin-left: 10px;
+}
+
 .navbar li:first-child::after, .navbar li:last-child::after {
   background: transparent;
   content: '';
@@ -319,8 +327,8 @@ a {
   opacity: .5;
   pointer-events: none;
   position: absolute;
-  -webkit-transform: translate(-7%, -10%);
-          transform: translate(-7%, -10%);
+  -webkit-transform: translate(0%, -10%);
+          transform: translate(0%, -10%);
   width: 100%;
 }
 
