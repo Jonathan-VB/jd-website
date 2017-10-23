@@ -1,0 +1,85 @@
+.navbar {
+  background: linear-gradient(to top, rgba($white, 0), rgba($black, .5), rgba($black, .5), rgba($white, 0));
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: z('navbar');
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 10px 0;
+  width: 100%;
+
+  @include mq('tablet-wide', max) {
+    height: 80px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px $color-text-shadow;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+
+    &:last-child {
+      margin-left: 10px;
+    }
+
+    &:first-child::after,
+    &:last-child::after {
+      background: transparent;
+      content: '';
+      display: block;
+      height: 2px;
+      margin: auto;
+      margin-top: 3px;
+      transition: width .5s ease, background-color .5s ease;
+      width: 0;
+    }
+  }
+
+  li:hover::after,
+  li:focus::after,
+  li:active::after {
+    background: $color-primary;
+    width: 100%;
+  }
+
+  a {
+    color: $white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .nav-logo {
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+
+    &::before {
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-name: logoGlow;
+      content: '';
+      display: block;
+      height: 100%;
+      opacity: .5;
+      pointer-events: none;
+      position: absolute;
+      transform: translate(0%, -10%);
+      width: 100%;
+    }
+  }
+}
+
+.navbar--fixed-top {
+  position: fixed;
+  top: 0;
+}
