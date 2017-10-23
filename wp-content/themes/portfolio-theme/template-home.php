@@ -6,7 +6,19 @@
 /**
  * get header.php
  */
-get_header(); ?>
+get_header();
+
+
+// args
+$args = array(
+	'post_type'		=> 'portfolio',
+  'posts_per_page' => 2,
+);
+
+// query
+$the_query = new WP_Query( $args );
+
+ ?>
 
 
 <section class="landing">
@@ -37,14 +49,22 @@ get_header(); ?>
   <div class="portfolio-content">
     <div class="portfolio-content--left">
       <ul>
-        <li class="project--1">
-          <h3 class="project--1__title">Census Ireland</h3>
-          <h4 class="project--1__subtitle">Tableau Data Visualisations</h4>
-        </li>
-        <li class="project--2">
+
+      <?php if( $the_query->have_posts() ): ?>
+	        <?php while( $the_query->have_posts() ) : $the_query->the_post();
+          $postnum++;?>
+            <li class="project--<?php echo $postnum; ?>">
+              <h3 class="project--<?php echo $postnum; ?>__title"><?php the_title(); ?></h3>
+              <h4 class="project--<?php echo $postnum; ?>__subtitle"><?php echo the_field('portfolio_subtitle'); ?></h4>
+            </li>
+          <?php endwhile; ?>
+      <?php endif; ?>
+
+
+        <!-- <li class="project--2">
           <h3 class="project--2__title">Selfie App</h3>
           <h4 class="project--2__subtitle">JavaScript &amp; HTML5 Canvas App</h4>
-        </li>
+        </li> -->
         <li class="project--3">
           <h3 class="project--3__title">Valkyrie</h3>
           <h4 class="project--3__subtitle">JavaScript &amp; HTML5 Canvas Game</h4>
