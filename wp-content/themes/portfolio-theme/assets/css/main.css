@@ -265,6 +265,12 @@ a {
   width: 100%;
 }
 
+@media only screen and (max-width: 1023px) {
+  .navbar {
+    height: 80px;
+  }
+}
+
 .navbar li {
   display: inline-block;
   padding: 5px;
