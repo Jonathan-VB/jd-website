@@ -117,6 +117,10 @@ a {
   font-family: "Roboto Black", Arial, Helvetica, sans-serif;
 }
 
+.text--bold--primary-color {
+  color: #009ea8;
+}
+
 @-webkit-keyframes logoGlow {
   from {
     border-radius: 50%;

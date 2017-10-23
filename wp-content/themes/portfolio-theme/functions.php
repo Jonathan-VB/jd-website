@@ -48,3 +48,23 @@ function remove_content_area() {
   remove_post_type_support( 'page', 'editor' );
 }
 add_action('admin_init', 'remove_content_area');
+
+
+/**
+ * Creating a custom post type for portfolios.
+ */
+function create_posttype_portfolio() {
+
+  register_post_type( 'portfolio',
+    array(
+      'labels' => array(
+        'name' => __( 'Portfolio' ),
+        'singular_name' => __( 'Portfolio' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'portfolio'),
+    )
+  );
+}
+add_action( 'init', 'create_posttype_portfolio' );
