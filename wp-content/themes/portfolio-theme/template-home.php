@@ -75,7 +75,9 @@ $portfolioItem = new WP_Query( $args );
 
             <div class="project--<?php echo $postnum; ?>__description">
               <p><?php echo the_field( 'portfolio_excerpt' ); ?></p>
-              <button class="button">View Case Study</button>
+              <a href="<?php the_permalink(); ?>">
+                <button class="button">View Case Study</button>
+              </a>
             </div>
 
           <?php endwhile; ?>
