@@ -51,13 +51,12 @@ $portfolioItem = new WP_Query( $args );
     <div class="portfolio-content--left">
       <ul>
 
-        <?php if( $portfolioItem->have_posts() ): ?>
-          <?php while( $portfolioItem->have_posts() ) : $portfolioItem->the_post();
-            $postnum++; ?>
+        <?php if( $portfolioItem->have_posts() ):
+          while( $portfolioItem->have_posts() ) : $portfolioItem->the_post(); $postnum++; ?>
 
             <li class="project--<?php echo $postnum; ?>">
               <h3 class="project--<?php echo $postnum; ?>__title"><?php the_title(); ?></h3>
-              <h4 class="project--<?php echo $postnum; ?>__subtitle"><?php echo the_field('portfolio_subtitle'); ?></h4>
+              <h4 class="project--<?php echo $postnum; ?>__subtitle"><?php echo the_field( 'portfolio_subtitle' ); ?></h4>
             </li>
 
           <?php endwhile; ?>
@@ -69,26 +68,19 @@ $portfolioItem = new WP_Query( $args );
 
     <div class="portfolio-content--right">
       <div class="project-description">
-        <div class="project--1__description">
-          <p>Census Ireland is a web application that allows users to dynamically interact with data being displayed on a map of Ireland.</p>
-          <button class="button">View Case Study</button>
-        </div>
-        <div class="project--2__description">
-          <p>The selfie app allows users to take a photo from the video stream and edit the photo using a drawing function, frames and filters. Once the user is done editing their photo they can upload it to a server.</p>
-          <button class="button">View Case Study</button>
-        </div>
-        <div class="project--3__description">
-          <p>A HTML5/JavaScript canvas game was created that allowed users to control Valkyrie, a flying turtle, with the aim of avoiding oncoming missiles.</p>
-          <button class="button">View Case Study</button>
-        </div>
-        <div class="project--4__description">
-          <p>The objective of this project was to create a news website with a home page and article page. The design doesn’t use any images, videos or colour which meant design techniques were established to show contrast between the sites different sections.</p>
-          <button class="button">View Case Study</button>
-        </div>
-        <div class="project--5__description">
-          <p>Keep Them Safe is a website created to help teach parents/guardians how to protect their children from online dangers. Users can access and leave comments on forums and view, add, edit, remove articles and videos, depending on the user's privilage level on the site.</p>
-          <button class="button">View Case Study</button>
-        </div>
+
+        <?php if( $portfolioItem->have_posts() ):
+          $postnum = 0;
+          while( $portfolioItem->have_posts() ) : $portfolioItem->the_post(); $postnum++; ?>
+
+            <div class="project--<?php echo $postnum; ?>__description">
+              <p><?php echo the_field( 'portfolio_excerpt' ); ?></p>
+              <button class="button">View Case Study</button>
+            </div>
+
+          <?php endwhile; ?>
+        <?php endif; ?>
+
       </div>
     </div>
   </div>
