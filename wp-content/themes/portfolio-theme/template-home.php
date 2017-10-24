@@ -17,9 +17,7 @@ $args = array(
   'posts_per_page' => 5,
 );
 
-$portfolioItem = new WP_Query( $args );
-
- ?>
+$portfolioItem = new WP_Query( $args ); ?>
 
 
 <section class="landing">
@@ -32,20 +30,19 @@ $portfolioItem = new WP_Query( $args );
 </section>
 
 <section class="portfolio" id="portfolio">
-  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-census-ireland.jpg'); no-repeat center center; background-size: cover;">
-  </div>
 
-  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-selfie-app.jpg'); no-repeat center center; background-size: cover;">
-  </div>
+  <?php if( $portfolioItem->have_posts() ):
+    while( $portfolioItem->have_posts() ) : $portfolioItem->the_post();
 
-  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-valkyrie.jpg'); no-repeat center center; background-size: cover;">
-  </div>
+      $attachment_id = get_field( 'portfolio_image' );
+      $size = "full";
+      $image = wp_get_attachment_image_src($attachment_id, $size);?>
 
-  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-bootstrap-newspaper.jpg'); no-repeat center center; background-size: cover;">
-  </div>
+      <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo $image[0]; ?>'); no-repeat center center; background-size: cover;">
+      </div>
 
-  <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-keep-them-safe.jpg'); no-repeat center center; background-size: cover;">
-  </div>
+    <?php endwhile; ?>
+  <?php endif; ?>
 
   <div class="portfolio-content">
     <div class="portfolio-content--left">
