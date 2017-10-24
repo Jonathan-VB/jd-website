@@ -9,14 +9,15 @@
 get_header();
 
 
-// args
+/**
+ * Portfolio CPT args.
+ */
 $args = array(
 	'post_type'		=> 'portfolio',
-  'posts_per_page' => 2,
+  'posts_per_page' => 5,
 );
 
-// query
-$the_query = new WP_Query( $args );
+$portfolioItem = new WP_Query( $args );
 
  ?>
 
@@ -50,33 +51,18 @@ $the_query = new WP_Query( $args );
     <div class="portfolio-content--left">
       <ul>
 
-      <?php if( $the_query->have_posts() ): ?>
-	        <?php while( $the_query->have_posts() ) : $the_query->the_post();
-          $postnum++;?>
+        <?php if( $portfolioItem->have_posts() ): ?>
+          <?php while( $portfolioItem->have_posts() ) : $portfolioItem->the_post();
+            $postnum++; ?>
+
             <li class="project--<?php echo $postnum; ?>">
               <h3 class="project--<?php echo $postnum; ?>__title"><?php the_title(); ?></h3>
               <h4 class="project--<?php echo $postnum; ?>__subtitle"><?php echo the_field('portfolio_subtitle'); ?></h4>
             </li>
+
           <?php endwhile; ?>
-      <?php endif; ?>
+        <?php endif; ?>
 
-
-        <!-- <li class="project--2">
-          <h3 class="project--2__title">Selfie App</h3>
-          <h4 class="project--2__subtitle">JavaScript &amp; HTML5 Canvas App</h4>
-        </li> -->
-        <li class="project--3">
-          <h3 class="project--3__title">Valkyrie</h3>
-          <h4 class="project--3__subtitle">JavaScript &amp; HTML5 Canvas Game</h4>
-        </li>
-        <li class="project--4">
-          <h3 class="project--4__title">Bootstrap Newspaper</h3>
-          <h4 class="project--4__subtitle">Web Design Concepts Using Bootstrap</h4>
-        </li>
-        <li class="project--5">
-          <h3 class="project--5__title">Restful API Games List</h3>
-          <h4 class="project--5__subtitle">MongoDB, Node.js &amp; Backbone.js</h4>
-        </li>
         <a href="<?php echo site_url(); ?>/portfolio"><li class="project-title--view-all">View All Projects</li></a>
       </ul>
     </div>
