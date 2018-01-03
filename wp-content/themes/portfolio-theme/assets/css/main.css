@@ -739,6 +739,11 @@ textarea:focus {
   text-align: left;
 }
 
+.portfolio-grid__item:hover .portfolio-grid__item__content__header {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
 .portfolio-grid__item__image {
   transition: opacity 0.45s;
   -webkit-backface-visibility: hidden;

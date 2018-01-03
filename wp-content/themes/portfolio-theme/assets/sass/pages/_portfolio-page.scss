@@ -90,6 +90,12 @@
 .portfolio-grid__item {
   background: #162633;
   text-align: left;
+
+  &:hover {
+    .portfolio-grid__item__content__header {
+      transform: translate3d(0,0,0);
+    }
+  }
 }
 
 .portfolio-grid__item__image {
