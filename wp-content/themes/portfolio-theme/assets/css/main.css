@@ -648,13 +648,10 @@ textarea:focus {
 }
 
 .portfolio-grid {
-  margin-top: 100px;
-}
-
-.grid {
   position: relative;
   clear: both;
   margin: 0 auto;
+  margin-top: 100px;
   padding: 1em 0 4em;
   max-width: 1000px;
   list-style: none;
@@ -662,14 +659,15 @@ textarea:focus {
 }
 
 /* Common style */
-.grid figure {
+.portfolio-grid__item {
   position: relative;
   float: left;
   overflow: hidden;
   margin: 10px 1%;
   min-width: 320px;
   max-width: 480px;
-  max-height: 360px;
+  min-height: 320px;
+  max-height: 480px;
   width: 48%;
   height: auto;
   background: #3085a3;
@@ -677,15 +675,21 @@ textarea:focus {
   cursor: pointer;
 }
 
-.grid figure img {
+.portfolio-grid__item__image {
   position: relative;
   display: block;
-  min-height: 100%;
-  max-width: 100%;
+  position: relative;
+  display: block;
+  /* min-height: 100%; */
+  /* max-width: 100%; */
+  opacity: 0.8;
+  /* object-fit: cover; */
+  width: 400px;
+  height: 400px;
   opacity: 0.8;
 }
 
-.grid figure figcaption {
+.portfolio-grid__item__content {
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
@@ -694,13 +698,12 @@ textarea:focus {
   backface-visibility: hidden;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
+.portfolio-grid__item__content::before, .portfolio-grid__item__content::after {
   pointer-events: none;
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
+.portfolio-grid__item__content,
+.portfolio-grid__item__content > .portfolio-grid__item__content__link {
   position: absolute;
   top: 0;
   left: 0;
@@ -710,7 +713,7 @@ textarea:focus {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+.portfolio-grid__item__content > .portfolio-grid__item__content__link {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -718,21 +721,21 @@ textarea:focus {
   opacity: 0;
 }
 
-.grid figure h2 {
+.portfolio-grid__item__content__header {
   word-spacing: -0.15em;
   font-weight: 300;
 }
 
-.grid figure h2 span {
+.portfolio-grid__item__content__header span {
   font-weight: 800;
 }
 
-.grid figure h2,
-.grid figure p {
+.portfolio-grid__item__content__header,
+.portfolio-grid__item__content__paragraph {
   margin: 0;
 }
 
-.grid figure p {
+.portfolio-grid__item__content__paragraph {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
