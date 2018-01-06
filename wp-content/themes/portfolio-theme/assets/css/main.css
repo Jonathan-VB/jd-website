@@ -1045,8 +1045,6 @@ textarea:focus {
 }
 
 .heading-background {
-  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/landing-background.png") no-repeat center center;
-  background-size: cover;
   height: auto;
 }
 
@@ -1064,7 +1062,8 @@ textarea:focus {
 
 .heading-content h1 {
   font-size: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
   text-shadow: 1px 1px 2px #111;
 }
 
@@ -1171,7 +1170,7 @@ textarea:focus {
 .main-body {
   background: #fff;
   margin-top: -50px;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .main-body p {

@@ -6,15 +6,23 @@
 /**
  * get header.php
  */
-get_header(); ?>
+get_header();
+
+
+/**
+ * ACF image variables.
+ */
+$attachment_id = get_field( 'portfolio_image' );
+$size = "full";
+$image = wp_get_attachment_image_src($attachment_id, $size); ?>
 
 
 <section class="heading">
-  <div class="heading-background">
+  <div class="heading-background" style="background: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2)), url(<?php echo $image[0]; ?>) no-repeat center center; background-size: cover;">
     <div class="container container--small">
       <div class="heading-content">
-        <h1>PROJECT ONE TITLE</h1>
-        <h2>Project One Subtitle</h2>
+        <h1 class="heading-content__title"><?php the_title(); ?></h1>
+        <h2 class="heading-content__subtitle"><?php echo the_field( 'portfolio_subtitle' ); ?></h2>
       </div>
     </div>
   </div>

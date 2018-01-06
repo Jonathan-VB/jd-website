@@ -22,8 +22,8 @@
 }
 
 .heading-background {
-  background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
-  background-size: cover;
+  // background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
+  // background-size: cover;
   height: auto;
 }
 
@@ -38,7 +38,8 @@
 
   h1 {
     font-size: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
     text-shadow: 1px 1px 2px $color-text-shadow;
 
     @include mq('tablet', max) {
@@ -135,7 +136,7 @@
 .main-body {
   background: $white;
   margin-top: -50px;
-  padding: 80px 0;
+  padding: 50px 0;
 
   p {
     color: $color-background-dark;
