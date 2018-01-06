@@ -24,6 +24,13 @@
   background: $black;
   text-align: center;
   cursor: pointer;
+
+  @include mq('tablet', max) {
+    min-width: auto;
+    width: 100%;
+    height: 340px;
+    float: none;
+  }
 }
 
 .portfolio-grid__item__image {
@@ -34,6 +41,10 @@
   height: 400px;
   opacity: 0.8;
   object-fit: cover;
+
+  @include mq('tablet', max) {
+    height: 340px;
+  }
 }
 
 .portfolio-grid__item__content {
@@ -47,6 +58,11 @@
   text-transform: uppercase;
   font-size: 1.75em;
   backface-visibility: hidden;
+
+  @include mq('tablet', max) {
+    padding: 1em;
+    font-size: 1.5em;
+  }
 
   &::before,
   &::after {
@@ -85,7 +101,6 @@
 }
 
 .portfolio-grid__item__content__paragraph {
-  letter-spacing: 1px;
   font-size: 68.5%;
   margin: 0;
 }
@@ -98,6 +113,16 @@
 .portfolio-grid__item {
   background: #162633;
   text-align: left;
+
+  @include mq('tablet', max) {
+    .portfolio-grid__item__content__header {
+      transform: translate3d(0,0,0);
+    }
+
+    .portfolio-grid__item__content__subheader {
+      opacity: 1;
+    }
+  }
 
   &:hover {
     .portfolio-grid__item__content__header {
@@ -113,6 +138,10 @@
 .portfolio-grid__item__image {
   transition: opacity 0.45s;
   backface-visibility: hidden;
+
+  @include mq('tablet', max) {
+    opacity: 0.8;
+  }
 
   &:hover img {
     opacity: 0.6;
@@ -132,6 +161,15 @@
     transition: opacity 0.45s, transform 0.45s;
     transform: rotate3d(0,0,1,45deg);
     transform-origin: 0 100%;
+  }
+
+  @include mq('tablet', max) {
+    &::before {
+      opacity: 0.7;
+      transform: rotate3d(0,0,1,19deg);
+      left: -2em;
+      top: 1.25em;
+    }
   }
 
   &:hover {
@@ -158,6 +196,10 @@
   padding: 0 90px 90px 0;
   font-size: .5em;
   font-family: $font-roboto-black;
+
+  @include mq('tablet', max) {
+    padding: 0 50px 60px 0;
+  }
 }
 
 .portfolio-grid__item__content__link {
@@ -169,6 +211,10 @@
     opacity: 0;
     transition:  0.5s;
     transform: translate3d(0,50px,0);
+
+    @include mq('tablet', max) {
+      opacity: 1;
+    }
   }
 
   &:hover,
