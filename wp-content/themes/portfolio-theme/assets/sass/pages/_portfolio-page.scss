@@ -26,6 +26,8 @@
   cursor: pointer;
 
   @include mq('tablet', max) {
+    left: 50%;
+    transform: translate(-50%);
     min-width: auto;
     width: 100%;
     height: 340px;
