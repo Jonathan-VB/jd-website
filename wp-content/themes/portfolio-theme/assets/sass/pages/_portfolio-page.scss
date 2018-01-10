@@ -39,7 +39,7 @@
 .portfolio-grid__item__image {
   position: relative;
   display: block;
-  opacity: 0.8;
+  opacity: 0.6;
   width: 100%;
   height: 400px;
   opacity: 0.8;
@@ -114,7 +114,7 @@
  * Hover effect
  */
 .portfolio-grid__item {
-  background: #162633;
+  background: $black;
   text-align: left;
 
   @include mq('tablet', max) {
