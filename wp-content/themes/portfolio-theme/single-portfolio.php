@@ -14,7 +14,13 @@ get_header();
  */
 $attachment_id = get_field( 'portfolio_image' );
 $size = "full";
-$image = wp_get_attachment_image_src($attachment_id, $size); ?>
+$image = wp_get_attachment_image_src($attachment_id, $size);
+
+
+/**
+ * Portfolio post loop.
+ */
+if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
 <section class="heading">
@@ -72,8 +78,9 @@ $image = wp_get_attachment_image_src($attachment_id, $size); ?>
       </a>
     </div>
 
-    <p><span class="dropcap">L</span>orem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
-    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+    <div class="portfolio__main-body">
+      <?php echo the_content(); ?>
+    </div>
 
     <div class="portfolio-options">
       <!-- <a href="#">Back Page
@@ -114,6 +121,12 @@ $image = wp_get_attachment_image_src($attachment_id, $size); ?>
 
 
 <?php
+/**
+ * End portfolio post loop.
+ */
+endwhile; endif;
+
+
 /**
  * get header.php
  */

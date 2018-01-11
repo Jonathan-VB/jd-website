@@ -1199,6 +1199,7 @@ textarea:focus {
   margin-bottom: 30px;
 }
 
+.portfolio__main-body p:first-child:first-letter,
 .dropcap {
   color: #009ea8;
   float: left;
