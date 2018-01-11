@@ -33,6 +33,10 @@
   transform: translate(-50%, -50%);
   width: 100%;
 
+  @include mq('tablet', max) {
+    top: calc(50% - 40px);
+  }
+
   h1 {
     font-size: 100px;
     margin-bottom: 5px;

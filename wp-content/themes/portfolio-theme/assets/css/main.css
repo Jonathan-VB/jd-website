@@ -491,6 +491,12 @@ textarea:focus {
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .landing-content {
+    top: calc(50% - 40px);
+  }
+}
+
 .landing-content h1 {
   font-size: 100px;
   margin-bottom: 5px;
@@ -1050,14 +1056,14 @@ textarea:focus {
 }
 
 .heading-content {
-  padding: 175px 0;
+  padding: 150px 0;
   text-align: left;
   width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
   .heading-content {
-    padding: 120px 0;
+    padding: 80px 0;
   }
 }
 
@@ -1089,6 +1095,13 @@ textarea:focus {
   font-size: 20px;
   padding: 80px 0;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .intro p {
+    padding: 50px 0;
+    font-size: 18px;
+  }
 }
 
 .divider__circle--white {
@@ -1172,6 +1185,12 @@ textarea:focus {
   background: #fff;
   margin-top: -50px;
   padding: 50px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-body {
+    padding: 30px 0;
+  }
 }
 
 .main-body p {
