@@ -84,7 +84,7 @@ $alt = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ); ?>
           </form>
 
           <div class="form-submission--success">
-            <p>THANK YOU FOR YOUR SUBMISSION!</p>
+            <p>THANK YOU FOR YOUR SUBMISSION! I WILL GET BACK TO YOU AS SOON AS I CAN :)</p>
           </div>
 
           <div class="form-submission--fail">

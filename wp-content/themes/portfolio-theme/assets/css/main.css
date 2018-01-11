@@ -436,8 +436,8 @@ textarea:focus {
   border: 2px solid #009ea8;
   outline: none;
   overflow: visible;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
 }
 
 @media only screen and (max-width: 767px) {
@@ -454,7 +454,7 @@ textarea:focus {
 .form-submission--success p,
 .form-submission--fail p {
   font-family: "Roboto Black", Arial, Helvetica, sans-serif;
-  font-size: 5vw;
+  font-size: 3.3vw;
   margin-top: 80px;
   text-align: center;
 }
