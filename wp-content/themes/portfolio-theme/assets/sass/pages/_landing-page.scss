@@ -101,6 +101,9 @@
 .portfolio-content--fixed-top {
   position: fixed;
   top: 12vh;
+  max-width: 1000px;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .portfolio-content--left {

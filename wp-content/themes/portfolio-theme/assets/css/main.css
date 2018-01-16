@@ -469,6 +469,14 @@ textarea:focus {
   width: 80%;
 }
 
+.main-body__container {
+  max-width: 800px;
+}
+
+.container__intro {
+  max-width: 900px;
+}
+
 .index {
   overflow: hidden;
 }
@@ -564,6 +572,10 @@ textarea:focus {
 .portfolio-content--fixed-top {
   position: fixed;
   top: 12vh;
+  max-width: 1000px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
 }
 
 .portfolio-content--left {
@@ -1197,6 +1209,11 @@ textarea:focus {
   color: #111;
   font-size: 18px;
   margin-bottom: 30px;
+}
+
+.main-body img {
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio__main-body p:first-child:first-letter,
