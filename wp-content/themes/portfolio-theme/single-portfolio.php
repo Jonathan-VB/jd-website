@@ -35,7 +35,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 </section>
 
 <section class="intro">
-  <div class="container container--small">
+  <div class="container container__intro">
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
   </div>
 
@@ -43,7 +43,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 </section>
 
 <section class="main-body">
-  <div class="container">
+  <div class="container main-body__container">
     <div class="portfolio-options">
       <!-- <a href="#">Back Page
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;"width="30px" height="30px">
