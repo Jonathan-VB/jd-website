@@ -122,9 +122,18 @@
   li {
     cursor: pointer;
 
+    &:hover {
+      color: $white;
+
+      h3 {
+        color: $white;
+      }
+    }
+
     h3 {
       text-transform: uppercase;
       transition: .750s;
+      color: darken($white, 35%);
     }
 
     h4 {
@@ -140,9 +149,9 @@
   width: 45%;
 }
 
-
 .project-title__active {
   font-size: 26px;
+  color: $white !important;
 }
 
 .project--1__subtitle,
@@ -171,12 +180,12 @@
   font-size: 18px;
   text-transform: uppercase;
   transition: .5s;
+  color: darken($white, 35%);
 
   &:hover,
   &:focus,
   &:active {
-    // margin-left: 5px;
-    // transform: scale(1.05);
+    color: $white;
   }
 }
 

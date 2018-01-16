@@ -602,9 +602,18 @@ textarea:focus {
   cursor: pointer;
 }
 
+.portfolio-content--left li:hover {
+  color: #fff;
+}
+
+.portfolio-content--left li:hover h3 {
+  color: #fff;
+}
+
 .portfolio-content--left li h3 {
   text-transform: uppercase;
   transition: .750s;
+  color: #a6a6a6;
 }
 
 .portfolio-content--left li h4 {
@@ -620,6 +629,7 @@ textarea:focus {
 
 .project-title__active {
   font-size: 26px;
+  color: #fff !important;
 }
 
 .project--1__subtitle,
@@ -648,6 +658,11 @@ textarea:focus {
   font-size: 18px;
   text-transform: uppercase;
   transition: .5s;
+  color: #a6a6a6;
+}
+
+.project-title--view-all:hover, .project-title--view-all:focus, .project-title--view-all:active {
+  color: #fff;
 }
 
 .project-description {
