@@ -559,6 +559,10 @@ textarea:focus {
   text-shadow: 0.5px 0.5px 0.5px #111;
   top: 100vh;
   width: 100%;
+  max-width: 1000px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
 }
 
 .portfolio-content a {
