@@ -247,7 +247,7 @@ a {
 }
 
 .navbar {
-  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5), rgba(255, 255, 255, 0));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, .65), rgba(0, 0, 0, .65), rgba(255, 255, 255, 0));
   bottom: 0;
   height: 100px;
   left: 0;
@@ -934,6 +934,10 @@ textarea:focus {
 
 .portfolio-grid__item:hover p a:nth-child(3) i {
   transition-delay: 0.05s;
+}
+
+.portfolio-grid__item:hover .portfolio-grid__item__image {
+  opacity: 0.5;
 }
 
 .portfolio-grid__item:hover p a:nth-child(2) i {

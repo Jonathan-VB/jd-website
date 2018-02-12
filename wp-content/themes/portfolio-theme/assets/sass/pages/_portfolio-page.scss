@@ -235,6 +235,10 @@
   transition-delay: 0.05s;
 }
 
+.portfolio-grid__item:hover .portfolio-grid__item__image {
+  opacity: 0.5;
+}
+
 .portfolio-grid__item:hover p a:nth-child(2) i {
   transition-delay: 0.1s;
 }
