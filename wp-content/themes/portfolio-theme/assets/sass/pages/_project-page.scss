@@ -85,9 +85,9 @@
   width: 100px;
 
   &::after {
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-name: bouncingArrow;
+    // animation-duration: 2.5s;
+    // animation-iteration-count: infinite;
+    // animation-name: bouncingArrow;
     color: $color-primary;
     content: '▽';
     display: inline-block;

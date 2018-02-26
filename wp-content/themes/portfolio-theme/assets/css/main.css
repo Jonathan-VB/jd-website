@@ -1154,12 +1154,6 @@ textarea:focus {
 }
 
 .divider__circle--white::after {
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: bouncingArrow;
-          animation-name: bouncingArrow;
   color: #009ea8;
   content: '▽';
   display: inline-block;
