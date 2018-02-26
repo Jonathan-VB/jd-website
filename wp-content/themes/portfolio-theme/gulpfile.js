@@ -12,6 +12,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var filter = require('gulp-filter');
+var minify = require('gulp-minifier');
 
 // ----- SETTINGS ----- //
 
@@ -86,6 +87,25 @@ gulp.task('cleanCSS', function(){
 
 });
 
+
+gulp.task('minify', function() {
+  return gulp.src('assets/**/*').pipe(minify({
+    minify: true,
+    minifyHTML: {
+      collapseWhitespace: true,
+      conservativeCollapse: true,
+    },
+    minifyJS: {
+      sourceMap: true
+    },
+    minifyCSS: true,
+    getKeptComment: function (content, filePath) {
+        var m = content.match(/\/\*![\s\S]*?\*\//img);
+        return m && m.join('\n') + '\n' || '';
+    }
+  })).pipe(gulp.dest('prod'));
+});
+
 // --------
 
 gulp.task('serve',function(){
@@ -99,4 +119,4 @@ gulp.task('serve',function(){
 gulp.task('default', ['styles','serve','watch']);
 
 // Production task
-gulp.task('production', ['default','scripts','cleanCSS']);
+gulp.task('production', ['default','scripts','cleanCSS', 'minify']);
