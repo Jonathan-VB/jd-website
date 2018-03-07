@@ -1,5 +1,4 @@
 // 01 Main landing section
-// Contains the site heading (my name!) and sub heading and triangle overlay.
 .heading {
   margin-top: 100px;
 
@@ -101,7 +100,7 @@
 
 .portfolio-options {
   display: flex;
-  font-family:$font-roboto-black;
+  font-family: $font-roboto-black;
   justify-content: flex-start;
   margin: 40px 0;
 
@@ -164,9 +163,9 @@
   color: $color-primary;
   float: left;
   font-family: $font-roboto-black;
-  font-size: 100px;
-  line-height: 40px;
-  margin-top: 20px;
+  font-size: 90px;
+  line-height: 50px;
+  margin-top: 10px;
   padding-bottom: 7px;
   padding-right: 7px;
 }

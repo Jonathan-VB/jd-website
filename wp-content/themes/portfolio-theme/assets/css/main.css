@@ -1238,9 +1238,9 @@ textarea:focus {
   color: #009ea8;
   float: left;
   font-family: "Roboto Black", Arial, Helvetica, sans-serif;
-  font-size: 100px;
-  line-height: 40px;
-  margin-top: 20px;
+  font-size: 90px;
+  line-height: 50px;
+  margin-top: 10px;
   padding-bottom: 7px;
   padding-right: 7px;
 }
