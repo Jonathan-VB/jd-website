@@ -838,7 +838,7 @@ textarea:focus {
 }
 
 .portfolio-grid__item__image:hover img {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .portfolio-grid__item__content::before {
@@ -937,7 +937,7 @@ textarea:focus {
 }
 
 .portfolio-grid__item:hover .portfolio-grid__item__image {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .portfolio-grid__item:hover p a:nth-child(2) i {
