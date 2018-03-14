@@ -106,6 +106,7 @@
 
   @include mq('tablet', max) {
     text-align: center;
+    flex-direction: column;
   }
 
   svg {
@@ -125,6 +126,11 @@
     margin-right: 30px;
     transition: .5s;
 
+    @include mq('tablet', max) {
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+
     &:hover,
     &:focus,
     &:active {
@@ -142,6 +148,10 @@
   margin-left: auto;
   margin-top: 16px;
   font-size: 14px;
+
+  @include mq('tablet', max) {
+    margin-left: 0px;
+  }
 }
 
 .main-body {

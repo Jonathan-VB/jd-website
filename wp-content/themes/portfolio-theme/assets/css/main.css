@@ -1178,6 +1178,10 @@ textarea:focus {
 @media only screen and (max-width: 767px) {
   .portfolio-options {
     text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1201,6 +1205,13 @@ textarea:focus {
   transition: .5s;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-options a {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
 .portfolio-options a:hover, .portfolio-options a:focus, .portfolio-options a:active {
   color: #009ea8;
 }
@@ -1214,6 +1225,12 @@ textarea:focus {
   margin-left: auto;
   margin-top: 16px;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-options__last-item {
+    margin-left: 0px;
+  }
 }
 
 .main-body {
