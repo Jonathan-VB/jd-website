@@ -24,7 +24,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
 <section class="heading">
-  <div class="heading-background" style="background: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2)), url(<?php echo $image[0]; ?>) no-repeat center center; background-size: cover;">
+  <div class="heading-background" style="background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(<?php echo $image[0]; ?>) no-repeat center center; background-size: cover;">
     <div class="container container--small">
       <div class="heading-content">
         <h1 class="heading-content__title"><?php the_title(); ?></h1>
