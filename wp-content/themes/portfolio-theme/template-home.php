@@ -38,7 +38,7 @@ $portfolioItem = new WP_Query( $args ); ?>
       $size = "full";
       $image = wp_get_attachment_image_src($attachment_id, $size);?>
 
-      <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('<?php echo $image[0]; ?>'); no-repeat center center; background-size: cover;">
+      <div class="portfolio-background scroll-point" style="background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('<?php echo $image[0]; ?>'); no-repeat center center; background-size: cover;">
       </div>
 
     <?php endwhile; ?>
