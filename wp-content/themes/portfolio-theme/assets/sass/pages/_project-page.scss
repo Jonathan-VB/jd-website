@@ -102,7 +102,7 @@
   display: flex;
   font-family: $font-roboto-black;
   justify-content: flex-start;
-  margin: 40px 0;
+  margin: 25px 0;
 
   @include mq('tablet', max) {
     text-align: center;
@@ -135,6 +135,13 @@
       }
     }
   }
+}
+
+.portfolio-options__last-item {
+  font-family: $font-roboto-medium;
+  margin-left: auto;
+  margin-top: 16px;
+  font-size: 14px;
 }
 
 .main-body {

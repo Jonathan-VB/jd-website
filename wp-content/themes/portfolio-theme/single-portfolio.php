@@ -89,6 +89,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
       <?php endif; ?>
 
+      <span class="portfolio-options__last-item">Published: <?php the_date(); ?></span>
+
     </div>
 
     <div class="portfolio__main-body">
