@@ -164,12 +164,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 /**
  * End portfolio post loop.
  */
-endwhile; endif; ?>
+endwhile; endif;
 
 
 
-
-<?php
 /**
  * get header.php
  */
