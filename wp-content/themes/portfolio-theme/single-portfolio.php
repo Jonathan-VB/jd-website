@@ -147,13 +147,29 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 </section>
 
 
+
+<section class="previous-next">
+  <div class="previous">
+    <p><?php previous_post_link(); ?></p>
+  </div>
+
+  <div class="next">
+    <p><?php next_post_link(); ?></p>
+  </div>
+</section>
+
+
+
 <?php
 /**
  * End portfolio post loop.
  */
-endwhile; endif;
+endwhile; endif; ?>
 
 
+
+
+<?php
 /**
  * get header.php
  */
