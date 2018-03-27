@@ -16,6 +16,19 @@ $attachment_id = get_field( 'portfolio_image' );
 $size = "full";
 $image = wp_get_attachment_image_src($attachment_id, $size);
 
+$prevPost = get_adjacent_post();
+$prevThumbnail = get_field( 'portfolio_image', $prevPost->ID );
+$prevImage = wp_get_attachment_image_src( $prevThumbnail, $size );
+$prevTitle = get_the_title( $prevPost->ID );
+$prevLink = get_the_permalink( $nextPost->ID );
+
+$nextPost = get_adjacent_post(false, '', false);
+$nextThumbnail = get_field( 'portfolio_image', $nextPost->ID );
+$nextImage = wp_get_attachment_image_src( $nextThumbnail, $size );
+$nextTitle = get_the_title( $nextPost->ID );
+$nextLink = get_the_permalink( $nextPost->ID );
+
+
 
 /**
  * Portfolio post loop.
@@ -149,13 +162,13 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
 <section class="previous-next">
-  <div class="previous">
-    <p><?php previous_post_link(); ?></p>
-  </div>
+  <a href="<?php echo $prevLink; ?>" class="previous" style="background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(<?php echo $prevImage[0]; ?>) no-repeat center center; background-size: cover;">
+    <p><?php echo $prevTitle; ?></p>
+  </a>
 
-  <div class="next">
-    <p><?php next_post_link(); ?></p>
-  </div>
+  <a href="<?php echo $nextLink ?>" class="next" style="background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(<?php echo $nextImage[0]; ?>) no-repeat center center; background-size: cover;">
+    <p><?php echo $nextTitle; ?></p>
+  </a>
 </section>
 
 
