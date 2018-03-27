@@ -20,7 +20,7 @@ $prevPost = get_adjacent_post();
 $prevThumbnail = get_field( 'portfolio_image', $prevPost->ID );
 $prevImage = wp_get_attachment_image_src( $prevThumbnail, $size );
 $prevTitle = get_the_title( $prevPost->ID );
-$prevLink = get_the_permalink( $nextPost->ID );
+$prevLink = get_the_permalink( $prevPost->ID );
 
 $nextPost = get_adjacent_post(false, '', false);
 $nextThumbnail = get_field( 'portfolio_image', $nextPost->ID );
