@@ -198,12 +198,12 @@
 
 .next,
 .previous {
-  padding: 100px 10%;
+  padding: 125px 10%;
   position: relative;
   transition: .5s;
 
   @include mq('tablet', max) {
-    padding: 70px 0%;
+    padding: 80px 0%;
   }
 
   p {
