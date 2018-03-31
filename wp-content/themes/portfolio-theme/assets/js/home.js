@@ -7,7 +7,6 @@ jQuery( document ).ready( function( $ ) {
       $window = $(window);
       aboutStart = distance * 6;
 
-  // NOTE: Clean up: Transition from About to Portfolio not animated correctly.
   $window.scroll(function() {
     if ($window.scrollTop() >= distance && $window.scrollTop() >= aboutStart) {
       port.addClass('portfolio-content--fixed-top-transition');

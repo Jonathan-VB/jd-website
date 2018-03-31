@@ -120,21 +120,6 @@ a {
   color: #009ea8;
 }
 
-@-webkit-keyframes logoGlow {
-  from {
-    border-radius: 50%;
-    box-shadow: 0 0 19px 10px transparent, inset 0 0 19px 10px transparent;
-  }
-  50% {
-    border-radius: 50%;
-    box-shadow: 0 0 18px 10px #009ea8, inset 0 0 18px 10px #009ea8;
-  }
-  to {
-    border-radius: 50%;
-    box-shadow: 0 0 19px 10px transparent, inset 0 0 19px 10px transparent;
-  }
-}
-
 @keyframes logoGlow {
   from {
     border-radius: 50%;
@@ -150,54 +135,15 @@ a {
   }
 }
 
-@-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @keyframes pulse {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@-webkit-keyframes bouncingArrow {
-  from {
-    top: 50%;
-  }
-  20% {
-    top: 30%;
-  }
-  40% {
-    top: 50%;
-  }
-  60% {
-    top: 40%;
-  }
-  80% {
-    top: 50%;
-  }
-  to {
-    top: 50%;
+    transform: scale(1);
   }
 }
 
@@ -253,15 +199,12 @@ a {
   position: absolute;
   width: 100%;
   z-index: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
+  -ms-flex-align: center;
+      align-items: center;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 0 0 10px 0;
   width: 100%;
 }
@@ -313,29 +256,22 @@ a {
 }
 
 .navbar .nav-logo {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
 }
 
 .navbar .nav-logo::before {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: logoGlow;
-          animation-name: logoGlow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: logoGlow;
   content: '';
   display: block;
   height: 100%;
   opacity: .5;
   pointer-events: none;
   position: absolute;
-  -webkit-transform: translate(0%, -10%);
-          transform: translate(0%, -10%);
+  transform: translate(0%, -10%);
   width: 100%;
 }
 
@@ -435,8 +371,7 @@ textarea:focus {
   border: 2px solid #009ea8;
   outline: none;
   overflow: visible;
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 @media only screen and (max-width: 767px) {
@@ -493,8 +428,7 @@ textarea:focus {
   position: relative;
   text-align: center;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 
@@ -559,8 +493,7 @@ textarea:focus {
   top: 100vh;
   width: 100%;
   max-width: 1000px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   left: 50%;
 }
 
@@ -576,8 +509,7 @@ textarea:focus {
   position: fixed;
   top: 12vh;
   max-width: 1000px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   left: 50%;
 }
 
@@ -589,13 +521,10 @@ textarea:focus {
 }
 
 .portfolio-content--left ul {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -672,8 +601,7 @@ textarea:focus {
   left: 50%;
   position: relative;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 
@@ -712,8 +640,7 @@ textarea:focus {
 @media only screen and (max-width: 767px) {
   .portfolio-grid__item {
     left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    transform: translate(-50%);
     min-width: auto;
     width: 100%;
     height: 340px;
@@ -807,8 +734,7 @@ textarea:focus {
 
 @media only screen and (max-width: 767px) {
   .portfolio-grid__item .portfolio-grid__item__content__header {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   .portfolio-grid__item .portfolio-grid__item__content__subheader {
     opacity: 1;
@@ -816,8 +742,7 @@ textarea:focus {
 }
 
 .portfolio-grid__item:hover .portfolio-grid__item__content__header {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .portfolio-grid__item:hover .portfolio-grid__item__content__subheader {
@@ -849,20 +774,15 @@ textarea:focus {
   background: url(../images/triangle.svg) no-repeat center center;
   background-size: 100% 100%;
   content: '';
-  transition: opacity 0.45s, -webkit-transform 0.45s;
   transition: opacity 0.45s, transform 0.45s;
-  transition: opacity 0.45s, transform 0.45s, -webkit-transform 0.45s;
-  -webkit-transform: rotate3d(0, 0, 1, 45deg);
-          transform: rotate3d(0, 0, 1, 45deg);
-  -webkit-transform-origin: 0 100%;
-          transform-origin: 0 100%;
+  transform: rotate3d(0, 0, 1, 45deg);
+  transform-origin: 0 100%;
 }
 
 @media only screen and (max-width: 767px) {
   .portfolio-grid__item__content::before {
     opacity: 0.7;
-    -webkit-transform: rotate3d(0, 0, 1, 19deg);
-            transform: rotate3d(0, 0, 1, 19deg);
+    transform: rotate3d(0, 0, 1, 19deg);
     left: -2em;
     top: 1.25em;
   }
@@ -870,21 +790,16 @@ textarea:focus {
 
 .portfolio-grid__item__content:hover::before {
   opacity: 0.7;
-  -webkit-transform: rotate3d(0, 0, 1, 19deg);
-          transform: rotate3d(0, 0, 1, 19deg);
+  transform: rotate3d(0, 0, 1, 19deg);
 }
 
 .portfolio-grid__item__content__header {
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
 }
 
 .portfolio-grid__item__content__header:hover {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .portfolio-grid__item__content__paragraph {
@@ -911,8 +826,7 @@ textarea:focus {
 .portfolio-grid__item__content__link i {
   opacity: 0;
   transition: 0.5s;
-  -webkit-transform: translate3d(0, 50px, 0);
-          transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
 }
 
 @media only screen and (max-width: 767px) {
@@ -927,8 +841,7 @@ textarea:focus {
 
 .portfolio-grid__item:hover p i {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .portfolio-grid__item:hover p a:nth-child(3) i {
@@ -1021,20 +934,17 @@ textarea:focus {
 }
 
 .about__icons {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   margin: 30px 0;
 }
 
 @media only screen and (max-width: 767px) {
   .about__icons {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
   }
 }
 
@@ -1073,8 +983,7 @@ textarea:focus {
   height: 400px;
   margin: -300px 0 0 -200px;
   position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   width: 400px;
   z-index: 2;
 }
@@ -1147,8 +1056,7 @@ textarea:focus {
   height: 100px;
   left: 50%;
   position: relative;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 100px;
 }
 
@@ -1160,28 +1068,23 @@ textarea:focus {
   left: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -75%);
-          transform: translate(-50%, -75%);
+  transform: translate(-50%, -75%);
 }
 
 .portfolio-options {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Roboto Black", Arial, Helvetica, sans-serif;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   margin: 25px 0;
 }
 
 @media only screen and (max-width: 767px) {
   .portfolio-options {
     text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 
@@ -1269,7 +1172,6 @@ textarea:focus {
 }
 
 .previous-next {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
@@ -1277,10 +1179,8 @@ textarea:focus {
 
 @media only screen and (max-width: 767px) {
   .previous-next {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 
@@ -1342,8 +1242,7 @@ textarea:focus {
   left: 0%;
   padding: 0px 10%;
   top: 50%;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
   z-index: 1;
 }
 

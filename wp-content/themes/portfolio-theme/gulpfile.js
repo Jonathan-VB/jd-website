@@ -88,8 +88,8 @@ gulp.task('cleanCSS', function(){
 });
 
 
-gulp.task('minify', function() {
-  return gulp.src('assets/**/*').pipe(minify({
+gulp.task('minify-css', function() {
+  return gulp.src('assets/css/*').pipe(minify({
     minify: true,
     minifyHTML: {
       collapseWhitespace: true,
@@ -103,7 +103,25 @@ gulp.task('minify', function() {
         var m = content.match(/\/\*![\s\S]*?\*\//img);
         return m && m.join('\n') + '\n' || '';
     }
-  })).pipe(gulp.dest('prod'));
+  })).pipe(gulp.dest('assets-prod/css'));
+});
+
+gulp.task('minify-js', function() {
+  return gulp.src('assets/js/*').pipe(minify({
+    minify: true,
+    minifyHTML: {
+      collapseWhitespace: true,
+      conservativeCollapse: true,
+    },
+    minifyJS: {
+      sourceMap: true
+    },
+    minifyCSS: true,
+    getKeptComment: function (content, filePath) {
+        var m = content.match(/\/\*![\s\S]*?\*\//img);
+        return m && m.join('\n') + '\n' || '';
+    }
+  })).pipe(gulp.dest('assets-prod/js'));
 });
 
 // --------
@@ -119,4 +137,4 @@ gulp.task('serve',function(){
 gulp.task('default', ['styles','serve','watch']);
 
 // Production task
-gulp.task('production', ['default','scripts','cleanCSS', 'minify']);
+gulp.task('production', ['default','scripts','cleanCSS', 'minify-js', 'minify-css']);
