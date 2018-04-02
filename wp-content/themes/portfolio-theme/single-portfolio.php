@@ -162,17 +162,17 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
 <section class="previous-next">
-  <a href="<?php echo $prevLink; ?>" class="previous" style="background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(<?php echo $prevImage[0]; ?>) no-repeat center center; background-size: cover;">
+  <a href="<?php echo $nextLink; ?>" class="previous" style="background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(<?php echo $nextImage[0]; ?>) no-repeat center center; background-size: cover;">
     <div class="previous__content">
       <span>Previous:</span>
-      <p><?php echo $prevTitle; ?></p>
+      <p><?php echo $nextTitle; ?></p>
     </div>
   </a>
 
-  <a href="<?php echo $nextLink ?>" class="next" style="background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(<?php echo $nextImage[0]; ?>) no-repeat center center; background-size: cover;">
+  <a href="<?php echo $prevLink ?>" class="next" style="background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(<?php echo $prevImage[0]; ?>) no-repeat center center; background-size: cover;">
     <div class="next__content">
       <span>Next:</span>
-      <p><?php echo $nextTitle; ?></p>
+      <p><?php echo $prevTitle; ?></p>
     </div>
   </a>
 </section>
