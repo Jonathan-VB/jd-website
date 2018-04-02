@@ -160,7 +160,11 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 </section>
 
 
-
+<?php
+/**
+ * The nextTitle (etc) are in the 'previous' class section to match the_post
+ * order the projects are in on the archive-portfolio page.
+ */ ?>
 <section class="previous-next">
   <a href="<?php echo $nextLink; ?>" class="previous" style="background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(<?php echo $nextImage[0]; ?>) no-repeat center center; background-size: cover;">
     <div class="previous__content">
