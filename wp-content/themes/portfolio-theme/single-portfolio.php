@@ -76,9 +76,9 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           </svg>
         </a>
 
-        <?php endif; ?>
+      <?php endif; ?>
 
-        <?php if( get_field('github_link') ): ?>
+      <?php if( get_field('github_link') ): ?>
 
         <a href="https://github.com/Jonathan-VB<?php echo the_field('github_link'); ?>" target="_blank" rel="noopener noreferrer">Github
           <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 438.536 438.536">
@@ -129,9 +129,9 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           </svg>
         </a>
 
-        <?php endif; ?>
+      <?php endif; ?>
 
-        <?php if( get_field('github_link') ): ?>
+      <?php if( get_field('github_link') ): ?>
 
         <a href="https://github.com/Jonathan-VB<?php echo the_field('github_link'); ?>" target="_blank" rel="noopener noreferrer">Github
           <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 438.536 438.536">
