@@ -185,7 +185,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <?php
 /**
- * End portfolio post loop.
+ * End portfolio post loop..
  */
 endwhile; endif;
 
