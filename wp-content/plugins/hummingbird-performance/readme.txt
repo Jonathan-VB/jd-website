@@ -6,9 +6,9 @@ Author URI: http://premium.wpmudev.org/
 Contributors: WPMUDEV
 Tags: Optimization, Caching, Speed, Performance, Faster, PageSpeed, Gzip, Compression, Minify, Minification, Cloudflare, Gravatar, Asset Optimization
 Requires at least: 4.6
-Tested up to: 4.9.4
+Tested up to: 4.9.5
 Requires PHP: 5.2
-Stable tag: 1.8.0.4
+Stable tag: 1.8.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -105,6 +105,23 @@ Asset Optimization is a great way to speed up your site but moving, combining an
 
 
 == Changelog ==
+
+= 1.8.1 ( 2018-04-11 ) =
+- New: Option to auto clear cache on plugin/theme update
+- New: Option to hide all notices
+- New: Option to show clear cache button on the admin bar
+- Enhance: Various performance improvements and tweaks
+- Enhance: Removed duplicate queries
+- Enhance: Optimize database writes/reads
+- Enhance: Keep compression settings when switching from advanced to basic view in asset optimization
+- Enhance: Javascript code optimization
+- Enhance: Improve WP_CACHE detection to avoid PHP warnings on some configurations
+- Enhance: Increased expiry time for files in asset optimization module
+- Fix: Remove RSS feeds from page caching
+- Fix: Empty exclusion rules in page cache settings were halting all page caching
+- Fix: Publish changes button not working after bulk updates
+- Fix: Page caching exclusion rules will now only escape the dot in the file extension (if present)
+- Fix: Product page type not showing in page caching settings
 
 = 1.8.0.4 ( 2018-03-14 ) =
 - Fix: API spam issue
