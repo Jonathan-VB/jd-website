@@ -71,7 +71,7 @@ $alt = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ); ?>
 
           <?php endif; ?>
 
-          <form id="form" action="/jd-website/wp-content/themes/portfolio-theme/contact-form-submission.php" method="POST" enctype="multipart/form-data">
+          <form id="form" action="<?php echo get_template_directory_uri(); ?>/contact-form-submission.php" method="POST" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="Name" required /><br />
             <input type="email" name="email" placeholder="Email" required /><br />
             <textarea rows="10" name="message" placeholder="Message" required></textarea>
