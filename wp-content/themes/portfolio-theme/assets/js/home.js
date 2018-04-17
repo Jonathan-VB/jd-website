@@ -25,8 +25,15 @@ jQuery( document ).ready( function( $ ) {
   var divs = $('.scroll-point');
   var dir = 'up'; // wheel scroll direction
   var div = 0; // current div
+  var animating = false;
 
   $(document.body).on('DOMMouseScroll mousewheel', function (e) {
+    if(animating) {
+      return false;
+    }
+
+    animating = true;
+
     if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
       dir = 'down';
     } else {
@@ -72,7 +79,10 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(1).offset().top
-      }, 750);
+      }, 750, function(){
+        animating = false;
+      });
+
       return false;
       div == 1;
     }
@@ -87,7 +97,10 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(2).offset().top
-      }, 750);
+      }, 750, function(){
+        animating = false;
+      });
+
       return false;
       div == 2;
     }
@@ -102,7 +115,10 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(3).offset().top
-      }, 750);
+      }, 750, function(){
+        animating = false;
+      });
+
       return false;
       div == 3;
     }
@@ -117,7 +133,10 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(4).offset().top
-      }, 750);
+      }, 750, function(){
+        animating = false;
+      });
+
       return false;
       div == 4;
     }
@@ -132,7 +151,10 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(5).offset().top
-      }, 750);
+      }, 750, function(){
+        animating = false;
+      });
+
       return false;
       div == 5;
     }
@@ -169,7 +191,10 @@ jQuery( document ).ready( function( $ ) {
 
     $('html,body').stop().animate({
       scrollTop: divs.eq(div).offset().top
-    }, 750);
+    }, 750, function(){
+      animating = false;
+    });
+
     return false;
   });
 
