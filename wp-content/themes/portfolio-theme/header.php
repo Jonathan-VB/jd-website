@@ -36,7 +36,7 @@
 
     <?php wp_nav_menu( array( 'menu' => 'main-left' ) ); ?>
 
-      <a class="nav-logo" href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets-prod/images/logo.png" class="logo"/></a>
+      <a class="nav-logo" href="<?php echo get_site_url(); ?>" title="Clickable logo to link back to the home page"><img src="<?php echo get_template_directory_uri(); ?>/assets-prod/images/logo.png" class="logo" alt="Jonathan Dempsey website logo" /></a>
 
     <?php wp_nav_menu( array( 'menu' => 'main-right' ) ); ?>
 

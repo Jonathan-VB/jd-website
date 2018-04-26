@@ -59,7 +59,7 @@ $portfolioItem = new WP_Query( $args ); ?>
           <?php endwhile; ?>
         <?php endif; ?>
 
-        <a href="<?php echo site_url(); ?>/portfolio"><li class="project-title--view-all">View All Projects</li></a>
+        <a href="<?php echo site_url(); ?>/portfolio" title="Link to the Portfolio page"><li class="project-title--view-all">View All Projects</li></a>
       </ul>
     </div>
 
@@ -72,7 +72,7 @@ $portfolioItem = new WP_Query( $args ); ?>
 
             <div class="project--<?php echo $postnum; ?>__description">
               <p><?php echo the_field( 'portfolio_excerpt' ); ?></p>
-              <a href="<?php the_permalink(); ?>">
+              <a href="<?php the_permalink(); ?>" title="Link to the <?php the_title(); ?> portfolio page">
                 <button class="button">View Project</button>
               </a>
             </div>

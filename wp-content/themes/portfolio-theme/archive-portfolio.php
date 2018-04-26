@@ -28,8 +28,8 @@ $portfolioItem = new WP_Query( $args )?>
       $size = "full";
       $image = wp_get_attachment_image_src($attachment_id, $size);?>
 
-      <a class="portfolio-grid__item" href="<?php the_permalink(); ?>">
-        <img class="portfolio-grid__item__image" src="<?php echo $image[0]; ?>" alt=""/>
+      <a class="portfolio-grid__item" href="<?php the_permalink(); ?>" title="Portfolio grid link to the <?php the_title(); ?> project page">
+        <img class="portfolio-grid__item__image" src="<?php echo $image[0]; ?>" alt="The featured image for the <?php the_title(); ?> project"/>
         <figcaption class="portfolio-grid__item__content">
           <h2 class="portfolio-grid__item__content__header"><?php the_title(); ?></h2>
           <h3 class="portfolio-grid__item__content__subheader"><?php echo the_field( 'portfolio_subtitle' ); ?></h3>
