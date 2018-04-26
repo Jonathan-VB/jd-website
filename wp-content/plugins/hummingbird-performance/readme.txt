@@ -8,7 +8,7 @@ Tags: Optimization, Caching, Speed, Performance, Faster, PageSpeed, Gzip, Compre
 Requires at least: 4.6
 Tested up to: 4.9.5
 Requires PHP: 5.2
-Stable tag: 1.8.1
+Stable tag: 1.8.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -105,6 +105,22 @@ Asset Optimization is a great way to speed up your site but moving, combining an
 
 
 == Changelog ==
+
+= 1.8.2 ( 2018-04-24 ) =
+- New: System Information module in Advanced Tools
+- Enhance: Improve caching notices
+- Enhance: Remove clear cache notice in Asset Optimizztion when re-checking files
+- Enhance: Asset Optimization performance improvements
+- Enhance: Asset Optimization log option in multisite moved to network settings
+- Fix: Performance test previous score not updated
+- Fix: Links in performance reports in multisite are not always redirecting to correct page
+- Fix: PHP 5.2 compatibility
+- Fix: Various UI fixes and improvements
+- Fix: Browser caching changes not reflected when selecting LiteSpeed server
+- Fix: Asset Optimization incorrect states for some files
+- Fix: CDN option changing state during a new scan
+- Fix: Remove wphb_minify_clear_files cron task when Asset Optimization module is not enabled
+- Fix: Warnings during ignore performance report
 
 = 1.8.1 ( 2018-04-11 ) =
 - New: Option to auto clear cache on plugin/theme update
