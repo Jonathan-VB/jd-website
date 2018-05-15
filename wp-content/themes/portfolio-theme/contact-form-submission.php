@@ -18,24 +18,37 @@ if (isset($_POST['submit'])) {
     $errors .= "Bad form input.";
   }
 
-  //Email Template. Send if no errors.
-  if (!isset($errors)) {
-    $eol = "\r\n";
-    $to = "jonathanedempsey@gmail.com";
-    $subject = "JD Website Form Submission";
-    $message .= "Submission Details:\n";
-    $message .= "\n";
-    $message .= "Name: " . $name . "\n";
-    $message .= "Email: " . $email . "\n";
-    $message .= "Message: " . $userMessage . "\n";
+  $to = "jonathanedempsey@gmail.com, admin@jonathandempsey.ie";
+  $subject = "HTML email";
 
-    $body .= $message . $eol;
+  $message = "
+  <html>
+  <head>
+  <title>HTML email</title>
+  </head>
+  <body>
+  <p>This email contains HTML Tags!</p>
+  <table>
+  <tr>
+  <th>Firstname</th>
+  <th>Lastname</th>
+  </tr>
+  <tr>
+  <td>John</td>
+  <td>Doe</td>
+  </tr>
+  </table>
+  </body>
+  </html>
+  ";
 
-    mail($to,$subject,$body,$headers);
-    echo $message;
-  }
-  else if ($errors) {
-    echo "Uh oh, looks like something isn't quite right...";
-    echo '<div style="color: red">' . $errors . '<br/></div>';
-  }
+  // Always set content-type when sending HTML email
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+  // More headers
+  $headers .= 'From: <webmaster@example.com>' . "\r\n";
+  $headers .= 'Cc: myboss@example.com' . "\r\n";
+
+  mail($to,$subject,$message,$headers);
 }

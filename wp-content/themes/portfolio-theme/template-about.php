@@ -71,7 +71,7 @@ $alt = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ); ?>
 
           <?php endif; ?>
 
-          <form id="form" action="<?php echo get_template_directory_uri(); ?>/contact-form-submission.php" method="POST" enctype="multipart/form-data">
+          <!-- <form id="form" action="<?php echo get_template_directory_uri(); ?>/contact-form-submission.php" method="POST" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="Name" required /><br />
             <input type="email" name="email" placeholder="Email" required /><br />
             <textarea rows="10" name="message" placeholder="Message" required></textarea>
@@ -81,7 +81,8 @@ $alt = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ); ?>
             <p style="display:none" >Please leave this field blank</p>
 
             <button class="button button__submit" type="submit" name="submit">SUBMIT</button>
-          </form>
+          </form> -->
+          <?php echo do_shortcode( '[contact-form-7 id="81" title="Contact form 1"]' ); ?>
 
           <div class="form-submission--success">
             <p>THANK YOU FOR YOUR SUBMISSION! I WILL GET BACK TO YOU AS SOON AS I CAN :)</p>
