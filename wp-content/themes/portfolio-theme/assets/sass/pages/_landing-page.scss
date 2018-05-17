@@ -34,7 +34,7 @@
   width: 100%;
 
   @include mq('tablet', max) {
-    top: calc(50% - 0px);
+    top: calc(50% - 40px);
   }
 
   h1 {
