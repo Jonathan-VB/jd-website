@@ -168,9 +168,10 @@ a {
   }
 }
 
-.button {
+.button,
+input[type=submit] {
   background: transparent;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
   cursor: pointer;
   font-family: "Roboto Black", Arial, Helvetica, sans-serif;
@@ -181,12 +182,14 @@ a {
   transition: .5s ease;
 }
 
-.button:hover {
-  border: 2px solid #009ea8;
+.button:hover,
+input[type=submit]:hover {
+  border: 1px solid #009ea8;
   overflow: visible;
 }
 
-.button__submit {
+.button__submit,
+input[type=submit]__submit {
   padding: 2%;
   width: 100%;
 }
@@ -353,25 +356,23 @@ textarea {
   font-size: 1rem;
   margin-bottom: 20px;
   padding: 2%;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
-  transition: .5s ease;
+  transition: .3s ease;
   width: 96%;
-}
-
-@media only screen and (max-width: 767px) {
-  input,
-  textarea {
-    text-align: left;
-  }
 }
 
 input:focus,
 textarea:focus {
-  border: 2px solid #009ea8;
+  border: 1px solid #009ea8;
   outline: none;
   overflow: visible;
-  transform: scale(1.025);
+  transform: scale(1.01);
+}
+
+input:hover,
+textarea:hover {
+  border: 1px solid #009ea8;
 }
 
 @media only screen and (max-width: 767px) {
@@ -391,6 +392,22 @@ textarea:focus {
   font-size: 3.3vw;
   margin-top: 80px;
   text-align: center;
+}
+
+/**
+ * Contact Form 7
+ */
+.wpcf7-submit {
+  width: 100%;
+  text-align: center;
+}
+
+.wpcf7-not-valid-tip {
+  display: none !important;
+}
+
+.wpcf7-not-valid {
+  border: 1px solid #a53434;
 }
 
 .container {
@@ -907,7 +924,7 @@ textarea:focus {
   float: right;
   height: 100%;
   margin-left: 5%;
-  text-align: right;
+  text-align: left;
   width: 45%;
 }
 
@@ -915,7 +932,6 @@ textarea:focus {
   .about-content--right {
     float: none;
     margin-left: 0;
-    text-align: left;
     width: 100%;
   }
 }
@@ -936,16 +952,9 @@ textarea:focus {
 .about__icons {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   margin: 30px 0;
-}
-
-@media only screen and (max-width: 767px) {
-  .about__icons {
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-  }
 }
 
 .about__icons path {
@@ -953,18 +962,15 @@ textarea:focus {
 }
 
 .about__icons a {
-  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.about__icons a:last-child {
+  margin-right: 30px;
 }
 
 .about__icons a:hover path, .about__icons a:active path {
   fill: #009ea8;
-}
-
-@media only screen and (max-width: 767px) {
-  .about__icons a {
-    margin-left: 0;
-    margin-right: 30px;
-  }
 }
 
 .about__icons object {

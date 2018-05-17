@@ -7,20 +7,20 @@ textarea {
   font-size: 1rem;
   margin-bottom: 20px;
   padding: 2%;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
-  transition: .5s ease;
+  transition: .3s ease;
   width: 96%;
 
-  @include mq('tablet', max) {
-    text-align: left;
-   }
-
   &:focus {
-    border: 2px solid $color-primary;
+    border: 1px solid $color-primary;
     outline: none;
     overflow: visible;
-    transform: scale(1.025);
+    transform: scale(1.010);
+  }
+
+  &:hover {
+    border: 1px solid $color-primary;
   }
 }
 
@@ -40,4 +40,20 @@ textarea {
     margin-top: 80px;
     text-align: center;
   }
+}
+
+/**
+ * Contact Form 7
+ */
+.wpcf7-submit {
+  width: 100%;
+  text-align: center;
+}
+
+.wpcf7-not-valid-tip {
+  display: none !important;
+}
+
+.wpcf7-not-valid {
+  border: 1px solid $color-form-error;
 }

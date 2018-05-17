@@ -45,13 +45,12 @@
   float: right;
   height: 100%;
   margin-left: 5%;
-  text-align: right;
+  text-align: left;
   width: 45%;
 
   @include mq('tablet', max) {
     float: none;
     margin-left: 0;
-    text-align: left;
     width: 100%;
    }
 
@@ -69,30 +68,25 @@
 
 .about__icons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 30px 0;
-
-  @include mq('tablet', max) {
-    justify-content: flex-start;
-   }
 
   path {
     transition: .5s;
   }
 
   a {
-    margin-left: 30px;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 30px;
+    }
 
     &:hover,
     &:active {
       path {
         fill: $color-primary;
       }
-    }
-
-    @include mq('tablet', max) {
-      margin-left: 0;
-      margin-right: 30px;
     }
   }
 
