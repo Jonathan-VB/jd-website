@@ -428,6 +428,15 @@ textarea:hover {
   border: 0px !important;
 }
 
+.wpcf7-mail-sent-ok {
+  padding: 5px 10px !important;
+  background-color: transparent;
+  color: #fff;
+  line-height: 1.3;
+  font-family: "Roboto light", Arial, Helvetica, sans-serif !important;
+  border: 1px solid #009ea8 !important;
+}
+
 .ajax-loader {
   display: none !important;
 }
