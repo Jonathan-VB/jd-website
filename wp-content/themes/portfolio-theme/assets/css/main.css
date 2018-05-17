@@ -942,6 +942,12 @@ textarea:hover {
   margin-bottom: 20%;
 }
 
+@media only screen and (max-width: 767px) {
+  .about-content--left p:last-child {
+    margin-bottom: 5%;
+  }
+}
+
 .about-content--right {
   float: right;
   height: 100%;
