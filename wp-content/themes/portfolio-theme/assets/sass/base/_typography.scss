@@ -76,3 +76,12 @@ a {
 .text--bold--primary-color {
   color: $color-primary;
 }
+
+.single-portfolio {
+  h2 {
+    font-family: $font-roboto-black;
+    color: $color-primary;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
