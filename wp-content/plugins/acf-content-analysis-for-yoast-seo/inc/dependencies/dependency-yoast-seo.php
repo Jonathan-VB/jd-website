@@ -1,5 +1,13 @@
 <?php
+/**
+ * ACF Content Analysis for Yoast SEO plugin file.
+ *
+ * @package YoastACFAnalysis
+ */
 
+/**
+ * Checks for the required Yoast SEO version.
+ */
 final class Yoast_ACF_Analysis_Dependency_Yoast_SEO implements Yoast_ACF_Analysis_Dependency {
 
 	const MINIMAL_REQUIRED_VERSION = 3.2;

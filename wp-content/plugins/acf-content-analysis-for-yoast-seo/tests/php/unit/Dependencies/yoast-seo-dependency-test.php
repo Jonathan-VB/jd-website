@@ -4,13 +4,24 @@ namespace Yoast\AcfAnalysis\Tests\Dependencies;
 
 use Brain\Monkey;
 
-class YoastSEODependencyTest extends \PHPUnit_Framework_TestCase {
-	protected $preserveGlobalState = false;
+class Yoast_SEO_Dependency_Test extends \PHPUnit_Framework_TestCase {
+	protected $preserveGlobalState      = false;
 	protected $runTestInSeparateProcess = true;
 
+	/**
+	 * Set up test fixtures.
+	 */
 	protected function setUp() {
 		parent::setUp();
 		Monkey\setUp();
+	}
+
+	/**
+	 * Tear down test fixtures previously setup.
+	 */
+	protected function tearDown() {
+		Monkey\tearDown();
+		parent::tearDown();
 	}
 
 	public function testFail() {
@@ -47,10 +58,5 @@ class YoastSEODependencyTest extends \PHPUnit_Framework_TestCase {
 		$testee->register_notifications();
 
 		$this->assertTrue( has_action( 'admin_notices', array( $testee, 'message_minimum_version' ) ) );
-	}
-
-	protected function tearDown() {
-		Monkey\tearDown();
-		parent::tearDown();
 	}
 }

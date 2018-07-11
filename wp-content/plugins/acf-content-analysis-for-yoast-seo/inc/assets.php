@@ -1,12 +1,20 @@
 <?php
-
+/**
+ * ACF Content Analysis for Yoast SEO plugin file.
+ *
+ * @package YoastACFAnalysis
+ */
 
 /**
  * Class Yoast_ACF_Analysis_Frontend
  */
 class Yoast_ACF_Analysis_Assets {
 
-	/** @var array Plugin information. */
+	/**
+	 * Plugin information.
+	 *
+	 * @var array
+	 */
 	protected $plugin_data;
 
 	/**
@@ -24,7 +32,11 @@ class Yoast_ACF_Analysis_Assets {
 	public function enqueue_scripts() {
 		global $pagenow;
 
-		/* @var $config Yoast_ACF_Analysis_Configuration */
+		/**
+		 * Yoast ACF plugin configuration.
+		 *
+		 * @var \Yoast_ACF_Analysis_Configuration
+		 */
 		$config = Yoast_ACF_Analysis_Facade::get_registry()->get( 'config' );
 
 		// Post page enqueue.
