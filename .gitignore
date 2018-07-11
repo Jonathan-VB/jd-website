@@ -53,6 +53,7 @@ node_modules/
 .htaccess
 wp-config.php
 wp-content/*
+!wp-content/uploads/
 !wp-content/themes/
 !wp-content/plugins/
 sitemap.xml
