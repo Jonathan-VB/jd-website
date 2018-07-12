@@ -189,11 +189,13 @@ jQuery( document ).ready( function( $ ) {
       activeProject05();
     }
 
-    $('html,body').stop().animate({
-      scrollTop: divs.eq(div).offset().top
-    }, 750, function(){
-      animating = false;
-    });
+    if(div <= 5) {
+      $('html,body').stop().animate({
+        scrollTop: divs.eq(div).offset().top
+      }, 750, function(){
+        animating = false;
+      });
+    }
 
     return false;
   });

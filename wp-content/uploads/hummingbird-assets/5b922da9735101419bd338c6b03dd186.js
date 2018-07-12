@@ -1,3 +1,0 @@
-/**handles:main_js**/
-jQuery(document).ready(function(t){t("#form").submit(function(a){a.preventDefault();var e=t(this).attr("action"),r=t(this).attr("method"),s=t(this).serialize();t.ajax({url:e,type:r,data:s,success:function(){t("#form").fadeOut(350),t(".form-submission--success").delay(351).fadeIn(350)},fail:function(a,e,r){t("#form").fadeOut(350),t(".form-submission--fail").delay(351).fadeIn(350),alert("Status: "+e),alert("Error: "+r)}})})});
-//# sourceMappingURL=app.js.map
