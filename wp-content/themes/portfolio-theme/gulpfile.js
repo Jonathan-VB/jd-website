@@ -128,8 +128,9 @@ gulp.task('minify-js', function() {
 
 gulp.task('serve',function(){
   browserSync.init({
-    proxy: "localhost/jd-website/"
+    // proxy: "localhost/jd-website/"
     // proxy: "localhost:8888/jd-website/"
+    proxy: "https://jd-website/"
   });
 });
 

@@ -52,7 +52,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <p><?php echo the_field( 'portfolio_excerpt' ); ?></p>
   </div>
 
-  <span class="divider__circle--white"></span>
+  <!-- <span class="divider__circle--white"></span> -->
 </section>
 
 <section class="main-body">

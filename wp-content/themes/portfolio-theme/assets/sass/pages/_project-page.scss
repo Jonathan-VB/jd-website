@@ -59,6 +59,8 @@
 // 02 Introduction section
 // Contains an introduction paragraph about the project and a divider.
 .intro {
+  position: relative;
+
   p {
     font-size: 20px;
     padding: 80px 0;
@@ -68,6 +70,18 @@
       padding: 50px 0;
       font-size: 18px;
     }
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: $color-background-dark;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
   }
 }
 
@@ -156,7 +170,6 @@
 
 .main-body {
   background: $white;
-  margin-top: -50px;
   padding: 50px 0;
 
   @include mq('tablet', max) {
@@ -238,7 +251,7 @@
   &:active,
   &:focus {
     &:after {
-      background: rgba(0,0,0, .6);
+      background: rgba($color-primary, .2);
     }
   }
 }
@@ -263,7 +276,7 @@
 
 .next {
   width: 65%;
-  border-left: 1px solid $color-primary;
+  border-left: 3px solid $color-primary;
 
   @include mq('tablet', max) {
     width: 100%;

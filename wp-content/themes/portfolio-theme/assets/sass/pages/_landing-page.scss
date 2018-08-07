@@ -84,7 +84,8 @@
   left: 0;
   position: absolute;
   text-shadow: .5px .5px .5px $color-text-shadow;
-  top: 100vh;
+  top: 120vh;
+  max-height: 600px;
   width: 100%;
   max-width: 1000px;
   transform: translateX(-50%);
@@ -103,9 +104,9 @@
 
 .portfolio-content--fixed-top {
   position: fixed;
-  top: 12vh;
+  top: 50%;
   max-width: 1000px;
-  transform: translateX(-50%);
+  transform: translate(-50%, -45%);
   left: 50%;
 }
 
@@ -153,7 +154,7 @@
 }
 
 .project-title__active {
-  font-size: 26px;
+  font-size: 30px;
   color: $white !important;
 }
 

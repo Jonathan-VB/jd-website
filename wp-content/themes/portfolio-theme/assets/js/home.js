@@ -51,7 +51,7 @@ jQuery( document ).ready( function( $ ) {
     }
     if (dir == 'down' && div < divs.length) {
       div++;
-    }
+    } 
 
     // Animation, class and CSS alterations for the focused project.
     function showProject(activeProject) {
@@ -79,7 +79,7 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(1).offset().top
-      }, 750, function(){
+      }, 850, function(){
         animating = false;
       });
 
@@ -97,7 +97,7 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(2).offset().top
-      }, 750, function(){
+      }, 850, function(){
         animating = false;
       });
 
@@ -115,7 +115,7 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(3).offset().top
-      }, 750, function(){
+      }, 850, function(){
         animating = false;
       });
 
@@ -133,7 +133,7 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(4).offset().top
-      }, 750, function(){
+      }, 850, function(){
         animating = false;
       });
 
@@ -151,8 +151,8 @@ jQuery( document ).ready( function( $ ) {
 
       $('html,body').stop().animate({
         scrollTop: divs.eq(5).offset().top
-      }, 750, function(){
-        animating = false;
+      }, 850, function(){
+        animating = true;
       });
 
       return false;
@@ -192,9 +192,11 @@ jQuery( document ).ready( function( $ ) {
     if(div <= 5) {
       $('html,body').stop().animate({
         scrollTop: divs.eq(div).offset().top
-      }, 750, function(){
+      }, 850, function(){
         animating = false;
       });
+    } else {
+      animating = false;
     }
 
     return false;
