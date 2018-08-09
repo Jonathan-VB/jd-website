@@ -49,7 +49,7 @@ add_action( 'init', 'register_theme_menus' );
 function remove_content_area() {
   remove_post_type_support( 'page', 'editor' );
 }
-add_action('admin_init', 'remove_content_area');
+add_action( 'admin_init', 'remove_content_area' );
 
 
 /**
@@ -70,3 +70,12 @@ function create_posttype_portfolio() {
   );
 }
 add_action( 'init', 'create_posttype_portfolio' );
+
+
+/**
+ * Enable ACF options page with sub pages.
+ */
+if( function_exists('acf_add_options_page') ) {
+  acf_add_options_page();
+  acf_add_options_sub_page( 'Contact Settings' );
+}
